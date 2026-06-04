@@ -351,3 +351,39 @@ db.Libros.insertMany([
         estado: 'Activo' 
     }
 ]);
+
+//4. Insertar usuarios
+db.usuario.insertMany([
+    { 
+        "codigo_usuario": "USR-ADM-001", 
+        "nombre_completo": "Elena Vásquez", 
+        "correo": "elena.admin@biblioteca.com", 
+        "clave": "admin123", 
+        "nivel_acceso": "Administrador", 
+        "estado": "Activo" 
+    },
+    { 
+        "codigo_usuario": "USR-BIB-002", 
+        "nombre_completo": "Roberto Gómez", 
+        "correo": "roberto.bib@biblioteca.com", 
+        "clave": "biblio123", 
+        "nivel_acceso": "Bibliotecario", 
+        "estado": "Activo" 
+    },
+    { 
+        "codigo_usuario": "USR-ASI-003", 
+        "nombre_completo": "María Fernanda López", 
+        "correo": "maria.asi@biblioteca.com", 
+        "clave": "asistente123", 
+        "nivel_acceso": "Asistente", 
+        "estado": "Activo" 
+    },
+    { 
+        "codigo_usuario": "USR-BIB-004", 
+        "nombre_completo": "Carlos Alberto Martínez", 
+        "correo": "carlos.bib@biblioteca.com", 
+        "clave": "biblio456", 
+        "nivel_acceso": "Bibliotecario", 
+        "estado": "Inactivo" 
+    }
+]);
