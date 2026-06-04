@@ -200,6 +200,14 @@ db.Autores.insertMany([
         nacionalidad: "Mexicano", 
         fecha_nacimiento: new Date("1925-06-13"), 
         estado: "Activo" 
+    },
+    {
+        codigo_autor: "",
+        nombre: "",
+        apellido: "",
+        nacionalidad: "",
+        fecha_nacimiento: new Date(""),
+        estado: ""
     }
 ]);
 
