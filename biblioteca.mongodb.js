@@ -468,82 +468,101 @@ db.prestamos.insertMany([
     },
     
     fechas: {
-      fecha_salida: new Date("2026-05-20T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-05-27T00:00:00Z"),
-      fecha_devolucion_real: new Date("2026-05-20T00:00:00Z")
+      fecha_salida: new Date("2026-05-20"),
+      fecha_devolucion_esperada: new Date("2026-05-27"),
+      fecha_devolucion_real: new Date("2026-05-20")
     },
     estado_prestamo: "Activo"
   },
   {
     codigo_prestamo: "PR-5002",
     codigo_usuario: "",
-    libro:{
+    libro: {
       codigo_libro: "",
       titulo: ""
     },
-    usuario:{
+    usuario: {
       codigo_usuario: "",
       nombre_completo: ""
     },
     fechas: {
-      fecha_salida: new Date("2026-05-10T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-05-17T00:00:00Z"),
-      fecha_devolucion_real: new Date("2026-05-22T00:00:00Z")
+      fecha_salida: new Date("2026-05-10"),
+      fecha_devolucion_esperada: new Date("2026-05-17"),
+      fecha_devolucion_real: new Date("2026-05-22")
     },
     estado_prestamo: "Devuelto"
   },
   {
     codigo_prestamo: "PR-5003",
     codigo_usuario: "",
-    libro:{
+    libro: {
       codigo_libro: "",
       titulo: ""
     },
-    usuario:{
+    usuario: {
       codigo_usuario: "",
       nombre_completo: ""
     },
     fechas: {
-      fecha_salida: new Date("2026-05-10T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-06-20T00:00:00Z"),
-      fecha_devolucion_real: new Date("2026-06-25T00:00:00Z")
+      fecha_salida: new Date("2026-05-10"),
+      fecha_devolucion_esperada: new Date("2026-06-20"),
+      fecha_devolucion_real: new Date("2026-06-25Z")
     },
     estado_prestamo: "Devuelto"
   },
   {
     codigo_prestamo: "PR-5004",
     codigo_usuario: "",
-    libro:{
+    libro: {
       codigo_libro: "",
       titulo: ""
     },
-    usuario:{
+    usuario: {
       codigo_usuario: "",
       nombre_completo: ""
     },
     fechas: {
-      fecha_salida: new Date("2026-05-10T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-04-17T00:00:00Z"),
-      fecha_devolucion_real: new Date("2026-05-19T00:00:00Z")
+      fecha_salida: new Date("2026-05-10"),
+      fecha_devolucion_esperada: new Date("2026-04-17"),
+      fecha_devolucion_real: new Date("2026-05-19")
     },
-    estado_prestamo: "Devuelto"
+    estado_prestamo: "Activo"
   },
   {
     codigo_prestamo: "PR-5005",
     codigo_usuario: "",
-    libro:{
+    libro: {
       codigo_libro: "",
       titulo: ""
     },
-    usuario:{
+    usuario: {
       codigo_usuario: "",
       nombre_completo: ""
     },
     fechas: {
-      fecha_salida: new Date("2026-07-10T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-07-13T00:00:00Z"),
-      fecha_devolucion_real: new Date("2026-07-17T00:00:00Z")
+      fecha_salida: new Date("2026-07-10"),
+      fecha_devolucion_esperada: new Date("2026-07-13"),
+      fecha_devolucion_real: new Date("2026-07-17")
     },
-    estado_prestamo: "Devuelto"
+    estado_prestamo: "Activo"
   },
+  {
+    codigo_prestamo: "PR-5006",
+    codigo_usuario: "",
+    libro: {
+        codigo_libro: "",
+        titulo: ""
+    },
+    usuario: {
+        codigo_usuario: "",
+        nombre_completo: ""
+    },
+    fechas: {
+        fecha_salida: new Date("2026-02-28"),
+        fecha_devolucion_esperada: new Date("2026-03-04"),
+        fecha_devolucion_real: new Date("2026-03-06")
+    },
+    estado_prestamo: "Inactivo"
+  },
+
 ]);
