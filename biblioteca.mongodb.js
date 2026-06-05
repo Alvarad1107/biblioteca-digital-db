@@ -71,6 +71,63 @@ db.createCollection("Libros", {
     }
 });
 
+// Colección Préstamos
+db.createCollection("Prestamos", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: [
+        "codigo_prestamo",
+        "codigo_usuario",
+        "codigo_libro",
+        "fechas",
+        "estado_prestamo"
+      ],
+      properties: {
+        codigo_prestamo: {
+          bsonType: "string",
+          pattern: "PR-[0-9]{4}",
+          description: "El código único del préstamo es obligatorio"
+        },
+        codigo_usuario: {
+          bsonType: "string",
+          pattern: "USR-[0-9]{5}",
+          description: "Referencia al código del estudiante o usuario (obligatorio)"
+        },
+        codigo_libro: {
+          bsonType: "string",
+          pattern: "LIB-[0-9]{4}",
+          description: "Referencia al código del libro prestado (obligatorio)"
+        },
+        fechas: {
+          bsonType: "object",
+          required: ["fecha_salida", "fecha_devolucion_esperada"],
+          properties: {
+            fecha_salida: {
+              bsonType: "date",
+              description: "Fecha en la que se realiza el préstamo"
+            },
+            fecha_devolucion_esperada: {
+              bsonType: "date",
+              description: "Fecha límite acordada para devolver el libro"
+            },
+            fecha_devolucion_real: {
+              bsonType: "date",
+              description: "Fecha en la que realmente se entregó"
+            }
+          },
+          description: "Documento embebido con el historial de fechas"
+        },
+        estado_prestamo: {
+          bsonType: "string",
+          enum: ["Activo", "Devuelto", "Atrasado"],
+          description: "Controla en qué estado se encuentra el préstamo"
+        }
+      }
+    }
+  }
+});
+
 // 2. Insertar Autores
 db.Autores.insertMany([
     { 
@@ -394,4 +451,99 @@ db.usuario.insertMany([
         "nivel_acceso": "Bibliotecario", 
         "estado": "Inactivo" 
     }
+]);
+
+//5. Insertar préstamos
+db.prestamos.insertMany([
+  {
+    codigo_prestamo: "PR-5001",
+    codigo_usuario: "",
+    libro: {
+      codigo_libro: "",
+      titulo: ""
+    },
+    usuario: {
+      codigo_usuario: "",
+      nombre_completo: ""
+    },
+    
+    fechas: {
+      fecha_salida: new Date("2026-05-20T00:00:00Z"),
+      fecha_devolucion_esperada: new Date("2026-05-27T00:00:00Z"),
+      fecha_devolucion_real: new Date("2026-05-20T00:00:00Z")
+    },
+    estado_prestamo: "Activo"
+  },
+  {
+    codigo_prestamo: "PR-5002",
+    codigo_usuario: "",
+    libro:{
+      codigo_libro: "",
+      titulo: ""
+    },
+    usuario:{
+      codigo_usuario: "",
+      nombre_completo: ""
+    },
+    fechas: {
+      fecha_salida: new Date("2026-05-10T00:00:00Z"),
+      fecha_devolucion_esperada: new Date("2026-05-17T00:00:00Z"),
+      fecha_devolucion_real: new Date("2026-05-22T00:00:00Z")
+    },
+    estado_prestamo: "Devuelto"
+  },
+  {
+    codigo_prestamo: "PR-5003",
+    codigo_usuario: "",
+    libro:{
+      codigo_libro: "",
+      titulo: ""
+    },
+    usuario:{
+      codigo_usuario: "",
+      nombre_completo: ""
+    },
+    fechas: {
+      fecha_salida: new Date("2026-05-10T00:00:00Z"),
+      fecha_devolucion_esperada: new Date("2026-06-20T00:00:00Z"),
+      fecha_devolucion_real: new Date("2026-06-25T00:00:00Z")
+    },
+    estado_prestamo: "Devuelto"
+  },
+  {
+    codigo_prestamo: "PR-5004",
+    codigo_usuario: "",
+    libro:{
+      codigo_libro: "",
+      titulo: ""
+    },
+    usuario:{
+      codigo_usuario: "",
+      nombre_completo: ""
+    },
+    fechas: {
+      fecha_salida: new Date("2026-05-10T00:00:00Z"),
+      fecha_devolucion_esperada: new Date("2026-04-17T00:00:00Z"),
+      fecha_devolucion_real: new Date("2026-05-19T00:00:00Z")
+    },
+    estado_prestamo: "Devuelto"
+  },
+  {
+    codigo_prestamo: "PR-5005",
+    codigo_usuario: "",
+    libro:{
+      codigo_libro: "",
+      titulo: ""
+    },
+    usuario:{
+      codigo_usuario: "",
+      nombre_completo: ""
+    },
+    fechas: {
+      fecha_salida: new Date("2026-07-10T00:00:00Z"),
+      fecha_devolucion_esperada: new Date("2026-07-13T00:00:00Z"),
+      fecha_devolucion_real: new Date("2026-07-17T00:00:00Z")
+    },
+    estado_prestamo: "Devuelto"
+  },
 ]);
