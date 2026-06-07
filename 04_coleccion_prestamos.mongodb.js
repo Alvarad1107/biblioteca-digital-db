@@ -105,14 +105,14 @@ db.Prestamos.insertMany([
     {
         codigo_prestamo: "PRE-00003",
         codigo_estudiante: "EST-",
-        codigo_usuario: "USR-ASI-", // Procesado por
+        codigo_usuario: "USR-ASI-003", // Procesado por María Fernanda
         fecha_prestamo: new Date(""),
         fecha_devolucion_prevista: new Date(""),
         fecha_devolucion_real: new Date(""),
         estado: "activo",
         detalles: [
             {
-                codigo_libro: "", //
+                codigo_libro: "LIB-0002", // Adios Job
                 cantidad: NumberInt(1)
             }
         ]
@@ -120,14 +120,14 @@ db.Prestamos.insertMany([
     {
         codigo_prestamo: "PRE-00004",
         codigo_estudiante: "EST-",
-        codigo_usuario: "USR-ASI-", // Procesado por
+        codigo_usuario: "USR-ASI-003", // Procesado por María Fernanda
         fecha_prestamo: new Date(""),
         fecha_devolucion_prevista: new Date(""),
         fecha_devolucion_real: new Date(""),
         estado: "activo",
         detalles: [
             {
-                codigo_libro: "", //
+                codigo_libro: "LIB-0008", // El hombre de los hongos
                 cantidad: NumberInt(1)
             }
         ]
@@ -135,14 +135,14 @@ db.Prestamos.insertMany([
     {
         codigo_prestamo: "PRE-00005",
         codigo_estudiante: "EST-",
-        codigo_usuario: "USR-ASI-", // Procesado por
+        codigo_usuario: "USR-BIB-2", // Procesado por Roberto Gómez
         fecha_prestamo: new Date(""),
         fecha_devolucion_prevista: new Date(""),
         fecha_devolucion_real: new Date(""),
         estado: "activo",
         detalles: [
             {
-                codigo_libro: "", //
+                codigo_libro: "LIB-0007", // Juventud en éxtasis
                 cantidad: NumberInt(1)
             }
         ]
@@ -150,14 +150,14 @@ db.Prestamos.insertMany([
     {
         codigo_prestamo: "PRE-00006",
         codigo_estudiante: "EST-",
-        codigo_usuario: "USR-ASI-", // Procesado por
+        codigo_usuario: "USR-ASI-003", // Procesado por María Fernanda
         fecha_prestamo: new Date(""),
         fecha_devolucion_prevista: new Date(""),
         fecha_devolucion_real: new Date(""),
-        estado: "activo",
+        estado: "devuelto",
         detalles: [
             {
-                codigo_libro: "", //
+                codigo_libro: "LIB-0005", // Heart of Aztlan
                 cantidad: NumberInt(1)
             }
         ]
@@ -165,14 +165,14 @@ db.Prestamos.insertMany([
     {
         codigo_prestamo: "PRE-00007",
         codigo_estudiante: "EST-",
-        codigo_usuario: "USR-ASI-", // Procesado por
+        codigo_usuario: "USR-BIB-002", // Procesado por Roberto Gómez
         fecha_prestamo: new Date(""),
         fecha_devolucion_prevista: new Date(""),
         fecha_devolucion_real: new Date(""),
-        estado: "activo",
+        estado: "devuelto",
         detalles: [
             {
-                codigo_libro: "", //
+                codigo_libro: "LIB-0004", // Antonia
                 cantidad: NumberInt(1)
             }
         ]
@@ -184,7 +184,7 @@ db.Prestamos.insertMany([
         fecha_prestamo: new Date(""),
         fecha_devolucion_prevista: new Date(""),
         fecha_devolucion_real: new Date(""),
-        estado: "activo",
+        estado: "devuelto",
         detalles: [
             {
                 codigo_libro: "", //
@@ -204,6 +204,10 @@ db.Prestamos.insertMany([
             {
                 codigo_libro: "", //
                 cantidad: NumberInt(1)
+            },
+            {
+                codigo_libro: "", //
+                cantidad: NumberInt(1)
             }
         ]
     },
@@ -214,7 +218,7 @@ db.Prestamos.insertMany([
         fecha_prestamo: new Date(""),
         fecha_devolucion_prevista: new Date(""),
         fecha_devolucion_real: new Date(""),
-        estado: "activo",
+        estado: "atrasado",
         detalles: [
             {
                 codigo_libro: "", //
@@ -229,7 +233,7 @@ db.Prestamos.insertMany([
         fecha_prestamo: new Date(""),
         fecha_devolucion_prevista: new Date(""),
         fecha_devolucion_real: new Date(""),
-        estado: "activo",
+        estado: "devuelto",
         detalles: [
             {
                 codigo_libro: "", //
@@ -244,7 +248,7 @@ db.Prestamos.insertMany([
         fecha_prestamo: new Date(""),
         fecha_devolucion_prevista: new Date(""),
         fecha_devolucion_real: new Date(""),
-        estado: "activo",
+        estado: "devuelto",
         detalles: [
             {
                 codigo_libro: "", //
@@ -259,7 +263,7 @@ db.Prestamos.insertMany([
         fecha_prestamo: new Date(""),
         fecha_devolucion_prevista: new Date(""),
         fecha_devolucion_real: new Date(""),
-        estado: "activo",
+        estado: "devuelto",
         detalles: [
             {
                 codigo_libro: "", //
@@ -289,7 +293,7 @@ db.Prestamos.insertMany([
         fecha_prestamo: new Date(""),
         fecha_devolucion_prevista: new Date(""),
         fecha_devolucion_real: new Date(""),
-        estado: "activo",
+        estado: "atrasado",
         detalles: [
             {
                 codigo_libro: "", //
@@ -319,8 +323,12 @@ db.Prestamos.insertMany([
         fecha_prestamo: new Date(""),
         fecha_devolucion_prevista: new Date(""),
         fecha_devolucion_real: new Date(""),
-        estado: "activo",
+        estado: "atrasado",
         detalles: [
+            {
+                codigo_libro: "", //
+                cantidad: NumberInt(1)
+            },
             {
                 codigo_libro: "", //
                 cantidad: NumberInt(1)
@@ -334,7 +342,7 @@ db.Prestamos.insertMany([
         fecha_prestamo: new Date(""),
         fecha_devolucion_prevista: new Date(""),
         fecha_devolucion_real: new Date(""),
-        estado: "activo",
+        estado: "devuelto",
         detalles: [
             {
                 codigo_libro: "", //
@@ -369,8 +377,331 @@ db.Prestamos.insertMany([
             {
                 codigo_libro: "", //
                 cantidad: NumberInt(1)
+            },
+            {
+                codigo_libro: "", //
+                cantidad: NumberInt(1)
             }
         ]
     },
-
+    {
+        codigo_prestamo: "PRE-00021",
+        codigo_estudiante: "EST-",
+        codigo_usuario: "USR-ASI-", // Procesado por
+        fecha_prestamo: new Date(""),
+        fecha_devolucion_prevista: new Date(""),
+        fecha_devolucion_real: new Date(""),
+        estado: "activo",
+        detalles: [
+            {
+                codigo_libro: "", //
+                cantidad: NumberInt(1)
+            }
+        ]
+    },
+    {
+        codigo_prestamo: "PRE-00022",
+        codigo_estudiante: "EST-",
+        codigo_usuario: "USR-ASI-", // Procesado por
+        fecha_prestamo: new Date(""),
+        fecha_devolucion_prevista: new Date(""),
+        fecha_devolucion_real: new Date(""),
+        estado: "activo",
+        detalles: [
+            {
+                codigo_libro: "", //
+                cantidad: NumberInt(1)
+            },
+            {
+                codigo_libro: "", //
+                cantidad: NumberInt(1)
+            }
+        ]
+    },
+    {
+        codigo_prestamo: "PRE-00023",
+        codigo_estudiante: "EST-",
+        codigo_usuario: "USR-ASI-", // Procesado por
+        fecha_prestamo: new Date(""),
+        fecha_devolucion_prevista: new Date(""),
+        fecha_devolucion_real: new Date(""),
+        estado: "devuelto",
+        detalles: [
+            {
+                codigo_libro: "", //
+                cantidad: NumberInt(1)
+            }
+        ]
+    },
+    {
+        codigo_prestamo: "PRE-00024",
+        codigo_estudiante: "EST-",
+        codigo_usuario: "USR-ASI-", // Procesado por
+        fecha_prestamo: new Date(""),
+        fecha_devolucion_prevista: new Date(""),
+        fecha_devolucion_real: new Date(""),
+        estado: "activo",
+        detalles: [
+            {
+                codigo_libro: "", //
+                cantidad: NumberInt(1)
+            }
+        ]
+    },
+    {
+        codigo_prestamo: "PRE-00025",
+        codigo_estudiante: "EST-",
+        codigo_usuario: "USR-ASI-", // Procesado por
+        fecha_prestamo: new Date(""),
+        fecha_devolucion_prevista: new Date(""),
+        fecha_devolucion_real: new Date(""),
+        estado: "activo",
+        detalles: [
+            {
+                codigo_libro: "", //
+                cantidad: NumberInt(1)
+            },
+            {
+                codigo_libro: "", //
+                cantidad: NumberInt(1)
+            }
+        ]
+    },
+    {
+        codigo_prestamo: "PRE-00026",
+        codigo_estudiante: "EST-",
+        codigo_usuario: "USR-ASI-", // Procesado por
+        fecha_prestamo: new Date(""),
+        fecha_devolucion_prevista: new Date(""),
+        fecha_devolucion_real: new Date(""),
+        estado: "atrasado",
+        detalles: [
+            {
+                codigo_libro: "", //
+                cantidad: NumberInt(1)
+            }
+        ]
+    },
+    {
+        codigo_prestamo: "PRE-00027",
+        codigo_estudiante: "EST-",
+        codigo_usuario: "USR-ASI-", // Procesado por
+        fecha_prestamo: new Date(""),
+        fecha_devolucion_prevista: new Date(""),
+        fecha_devolucion_real: new Date(""),
+        estado: "activo",
+        detalles: [
+            {
+                codigo_libro: "", //
+                cantidad: NumberInt(1)
+            }
+        ]
+    },
+    {
+        codigo_prestamo: "PRE-00028",
+        codigo_estudiante: "EST-",
+        codigo_usuario: "USR-ASI-", // Procesado por
+        fecha_prestamo: new Date(""),
+        fecha_devolucion_prevista: new Date(""),
+        fecha_devolucion_real: new Date(""),
+        estado: "activo",
+        detalles: [
+            {
+                codigo_libro: "", //
+                cantidad: NumberInt(1)
+            }
+        ]
+    },
+    {
+        codigo_prestamo: "PRE-00029",
+        codigo_estudiante: "EST-",
+        codigo_usuario: "USR-ASI-", // Procesado por
+        fecha_prestamo: new Date(""),
+        fecha_devolucion_prevista: new Date(""),
+        fecha_devolucion_real: new Date(""),
+        estado: "activo",
+        detalles: [
+            {
+                codigo_libro: "", //
+                cantidad: NumberInt(1)
+            }
+        ]
+    },
+    {
+        codigo_prestamo: "PRE-00030",
+        codigo_estudiante: "EST-",
+        codigo_usuario: "USR-ASI-", // Procesado por
+        fecha_prestamo: new Date(""),
+        fecha_devolucion_prevista: new Date(""),
+        fecha_devolucion_real: new Date(""),
+        estado: "activo",
+        detalles: [
+            {
+                codigo_libro: "", //
+                cantidad: NumberInt(1)
+            }
+        ]
+    },
+    {
+        codigo_prestamo: "PRE-00031",
+        codigo_estudiante: "EST-",
+        codigo_usuario: "USR-ASI-", // Procesado por
+        fecha_prestamo: new Date(""),
+        fecha_devolucion_prevista: new Date(""),
+        fecha_devolucion_real: new Date(""),
+        estado: "devuelto",
+        detalles: [
+            {
+                codigo_libro: "", //
+                cantidad: NumberInt(1)
+            }
+        ]
+    },
+    {
+        codigo_prestamo: "PRE-00032",
+        codigo_estudiante: "EST-",
+        codigo_usuario: "USR-ASI-", // Procesado por
+        fecha_prestamo: new Date(""),
+        fecha_devolucion_prevista: new Date(""),
+        fecha_devolucion_real: new Date(""),
+        estado: "activo",
+        detalles: [
+            {
+                codigo_libro: "", //
+                cantidad: NumberInt(1)
+            }
+        ]
+    },
+    {
+        codigo_prestamo: "PRE-00033",
+        codigo_estudiante: "EST-",
+        codigo_usuario: "USR-ASI-", // Procesado por
+        fecha_prestamo: new Date(""),
+        fecha_devolucion_prevista: new Date(""),
+        fecha_devolucion_real: new Date(""),
+        estado: "atrasado",
+        detalles: [
+            {
+                codigo_libro: "", //
+                cantidad: NumberInt(1)
+            }
+        ]
+    },
+    {
+        codigo_prestamo: "PRE-00034",
+        codigo_estudiante: "EST-",
+        codigo_usuario: "USR-ASI-", // Procesado por
+        fecha_prestamo: new Date(""),
+        fecha_devolucion_prevista: new Date(""),
+        fecha_devolucion_real: new Date(""),
+        estado: "devuelto",
+        detalles: [
+            {
+                codigo_libro: "", //
+                cantidad: NumberInt(1)
+            },
+            {
+                codigo_libro: "", //
+                cantidad: NumberInt(1)
+            }
+        ]
+    },
+    {
+        codigo_prestamo: "PRE-00035",
+        codigo_estudiante: "EST-",
+        codigo_usuario: "USR-ASI-", // Procesado por
+        fecha_prestamo: new Date(""),
+        fecha_devolucion_prevista: new Date(""),
+        fecha_devolucion_real: new Date(""),
+        estado: "devuelto",
+        detalles: [
+            {
+                codigo_libro: "", //
+                cantidad: NumberInt(1)
+            },
+            {
+                codigo_libro: "", //
+                cantidad: NumberInt(1)
+            }
+        ]
+    },
+    {
+        codigo_prestamo: "PRE-00036",
+        codigo_estudiante: "EST-",
+        codigo_usuario: "USR-ASI-", // Procesado por
+        fecha_prestamo: new Date(""),
+        fecha_devolucion_prevista: new Date(""),
+        fecha_devolucion_real: new Date(""),
+        estado: "activo",
+        detalles: [
+            {
+                codigo_libro: "", //
+                cantidad: NumberInt(1)
+            }
+        ]
+    },
+    {
+        codigo_prestamo: "PRE-00037",
+        codigo_estudiante: "EST-",
+        codigo_usuario: "USR-ASI-", // Procesado por
+        fecha_prestamo: new Date(""),
+        fecha_devolucion_prevista: new Date(""),
+        fecha_devolucion_real: new Date(""),
+        estado: "activo",
+        detalles: [
+            {
+                codigo_libro: "", //
+                cantidad: NumberInt(1)
+            }
+        ]
+    },
+    {
+        codigo_prestamo: "PRE-00038",
+        codigo_estudiante: "EST-",
+        codigo_usuario: "USR-ASI-", // Procesado por
+        fecha_prestamo: new Date(""),
+        fecha_devolucion_prevista: new Date(""),
+        fecha_devolucion_real: new Date(""),
+        estado: "activo",
+        detalles: [
+            {
+                codigo_libro: "", //
+                cantidad: NumberInt(1)
+            }
+        ]
+    },
+    {
+        codigo_prestamo: "PRE-00039",
+        codigo_estudiante: "EST-",
+        codigo_usuario: "USR-ASI-", // Procesado por
+        fecha_prestamo: new Date(""),
+        fecha_devolucion_prevista: new Date(""),
+        fecha_devolucion_real: new Date(""),
+        estado: "activo",
+        detalles: [
+            {
+                codigo_libro: "", //
+                cantidad: NumberInt(1)
+            },
+            {
+                codigo_libro: "", //
+                cantidad: NumberInt(1)
+            }
+        ]
+    },
+    {
+        codigo_prestamo: "PRE-00040",
+        codigo_estudiante: "EST-",
+        codigo_usuario: "USR-ASI-", // Procesado por
+        fecha_prestamo: new Date(""),
+        fecha_devolucion_prevista: new Date(""),
+        fecha_devolucion_real: new Date(""),
+        estado: "devuelto",
+        detalles: [
+            {
+                codigo_libro: "", //
+                cantidad: NumberInt(1)
+            }
+        ]
+    },
 ]);
