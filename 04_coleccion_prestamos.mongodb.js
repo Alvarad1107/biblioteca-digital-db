@@ -31,13 +31,13 @@ db.createCollection("Prestamos", {
         },
         fechas: {
           bsonType: "object",
-          required: ["fecha_salida", "fecha_devolucion_esperada"],
+          required: ["fecha_salida", "fecha_limite_devolucion"],
           properties: {
             fecha_salida: {
               bsonType: "date",
               description: "Fecha en la que se realiza el préstamo"
             },
-            fecha_devolucion_esperada: {
+            fecha_limite_devolucion: {
               bsonType: "date",
               description: "Fecha límite acordada para devolver el libro"
             },
@@ -73,8 +73,7 @@ db.prestamos.insertMany([
     
     fechas: {
       fecha_salida: new Date("2026-05-20T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-05-27T00:00:00Z"),
-      fecha_devolucion_real: new Date("2026-05-20T00:00:00Z")
+      fecha_devolucion_limite: new Date("2026-05-27T00:00:00Z"),
     },
     estado_prestamo: "Activo"
   },
@@ -90,7 +89,7 @@ db.prestamos.insertMany([
     },
     fechas: {
       fecha_salida: new Date("2026-05-10T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-05-17T00:00:00Z"),
+      fecha_devolucion_limite: new Date("2026-05-17T00:00:00Z"),
       fecha_devolucion_real: new Date("2026-05-22T00:00:00Z")
     },
     estado_prestamo: "Devuelto"
@@ -107,16 +106,15 @@ db.prestamos.insertMany([
     },
     fechas: {
       fecha_salida: new Date("2026-05-10T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-06-20T00:00:00Z"),
-      fecha_devolucion_real: new Date("2026-06-25T00:00:00Z")
+      fecha_devolucion_limite: new Date("2026-06-20T00:00:00Z"),
     },
     estado_prestamo: "Activo"
   },
   {
     codigo_prestamo: "PR-5004",
     libro:{
-      codigo_libro: "LIB-0006",
-      titulo: "La región más transparente"
+      codigo_libro: "LIB-00016",
+      titulo: "Cuentos de Lemon Twist"
     },
     usuario:{
       codigo_usuario: "USR-BIB-002",
@@ -124,16 +122,15 @@ db.prestamos.insertMany([
     },
     fechas: {
       fecha_salida: new Date("2026-05-10T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-04-17T00:00:00Z"),
-      fecha_devolucion_real: new Date("2026-05-19T00:00:00Z")
+      fecha_devolucion_limite: new Date("2026-04-17T00:00:00Z"),
     },
     estado_prestamo: "Retrasado"
   },
   {
     codigo_prestamo: "PR-5005",
     libro: {
-      codigo_libro: "LIB-00017",
-      titulo: "Poesias"
+      codigo_libro: "LIB-0008",
+      titulo: "soy de aquí y soy de alla"
     },
     usuario: {
       codigo_usuario: "",
@@ -141,7 +138,7 @@ db.prestamos.insertMany([
     },
     fechas: {
       fecha_salida: new Date("2026-05-01T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-05-08T00:00:00Z"),
+      fecha_limite_devolucion: new Date("2026-05-08T00:00:00Z"),
       fecha_devolucion_real: new Date("2026-05-06T00:00:00Z")
     },
     estado_prestamo: "Devuelto"
@@ -149,8 +146,8 @@ db.prestamos.insertMany([
   {
     codigo_prestamo: "PR-5006",
     libro: {
-      codigo_libro: "LIB-00018",
-      titulo: "Jupiter"
+      codigo_libro: "LIB-0009",
+      titulo: "el amor y la amistad en el mexico"
     },
     usuario: {
       codigo_usuario: "",
@@ -158,13 +155,159 @@ db.prestamos.insertMany([
     },
     fechas: {
       fecha_salida: new Date("2026-05-02T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-05-09T00:00:00Z"),
-      fecha_devolucion_real: new Date("2026-05-10T00:00:00Z")
+      fecha_limite_devolucion: new Date("2026-05-09T00:00:00Z")
     },
     estado_prestamo: "Activo"
   },
   {
     codigo_prestamo: "PR-5007",
+    libro: {
+      codigo_libro: "LIB-00010",
+      titulo: "el aguila y la serpiente"
+    },
+    usuario: {
+      codigo_usuario: "",
+      nombre_completo: ""
+    },
+    fechas: {
+      fecha_salida: new Date("2026-05-03T00:00:00Z"),
+      fecha_limite_devolucion: new Date("2026-05-10T00:00:00Z")
+    },
+    estado_prestamo: "Retrasado"
+  },
+  {
+    codigo_prestamo: "PR-5008",
+    libro: {
+      codigo_libro: "LIB-00011",
+      titulo: "leyendas mexicanas"
+    },
+    usuario: {
+      codigo_usuario: "",
+      nombre_completo: ""
+    },
+    fechas: {
+      fecha_salida: new Date("2026-05-04T00:00:00Z"),
+      fecha_limite_devolucion: new Date("2026-05-11T00:00:00Z"),
+      fecha_devolucion_real: new Date("2026-05-09T00:00:00Z")
+    },
+    estado_prestamo: "Devuelto"
+  },
+  {
+    codigo_prestamo: "PR-5009",
+    libro: {
+      codigo_libro: "LIB-00012",
+      titulo: "el periquillo sarniento"
+    },
+    usuario: {
+      codigo_usuario: "",
+      nombre_completo: ""
+    },
+    fechas: {
+      fecha_salida: new Date("2026-05-05T00:00:00Z"),
+      fecha_limite_devolucion: new Date("2026-05-12T00:00:00Z")
+    },
+    estado_prestamo: "Activo"
+  },
+  {
+    codigo_prestamo: "PR-5010",
+    libro: {
+      codigo_libro: "LIB-00013",
+      titulo: "La Voz adolorida"
+    },
+    usuario: {
+      codigo_usuario: "",
+      nombre_completo: ""
+    },
+    fechas: {
+      fecha_salida: new Date("2026-05-06T00:00:00Z"),
+      fecha_limite_devolucion: new Date("2026-05-13T00:00:00Z")
+    },
+    estado_prestamo: "Retrasado"
+  },
+  {
+    codigo_prestamo: "PR-5011",
+    libro: {
+      codigo_libro: "LIB-00014",
+      titulo: "Los de abajo"
+    },
+    usuario: {
+      codigo_usuario: "",
+      nombre_completo: ""
+    },
+    fechas: {
+      fecha_salida: new Date("2026-05-07T00:00:00Z"),
+      fecha_limite_devolucion: new Date("2026-05-14T00:00:00Z"),
+      fecha_devolucion_real: new Date("2026-05-12T00:00:00Z")
+    },
+    estado_prestamo: "Devuelto"
+  },
+  {
+    codigo_prestamo: "PR-5012",
+    libro: {
+      codigo_libro: "LIB-00015",
+      titulo: "Matacandela"
+    },
+    usuario: {
+      codigo_usuario: "",
+      nombre_completo: ""
+    },
+    fechas: {
+      fecha_salida: new Date("2026-05-08T00:00:00Z"),
+      fecha_limite_devolucion: new Date("2026-05-15T00:00:00Z")
+    },
+    estado_prestamo: "Activo"
+  },
+  {
+    codigo_prestamo: "PR-5013",
+    libro: {
+      codigo_libro: "LIB-00016",
+      titulo: "Retrato hablado"
+    },
+    usuario: {
+      codigo_usuario: "",
+      nombre_completo: ""
+    },
+    fechas: {
+      fecha_salida: new Date("2026-05-09T00:00:00Z"),
+      fecha_limite_devolucion: new Date("2026-05-16T00:00:00Z")
+    },
+    estado_prestamo: "Retrasado"
+  },
+  {
+    codigo_prestamo: "PR-5014",
+    libro: {
+      codigo_libro: "LIB-00017",
+      titulo: "Oda al Ciudadano General Francisco Morazan"
+    },
+    usuario: {
+      codigo_usuario: "",
+      nombre_completo: ""
+    },
+    fechas: {
+      fecha_salida: new Date("2026-05-10T00:00:00Z"),
+      fecha_limite_devolucion: new Date("2026-05-17T00:00:00Z"),
+      fecha_devolucion_real: new Date("2026-05-15T00:00:00Z")
+    },
+    estado_prestamo: "Devuelto"
+  },
+  {
+    codigo_prestamo: "PR-5015",
+    libro: {
+      codigo_libro: "LIB-00018",
+      titulo: "Cuentos y Narraciones"
+    },
+    usuario: {
+      codigo_usuario: "",
+      nombre_completo: ""
+    },
+    fechas: {
+      fecha_salida: new Date("2026-05-11T00:00:00Z"),
+      fecha_limite_devolucion: new Date("2026-05-18T00:00:00Z")
+    },
+    estado_prestamo: "Activo"
+  },
+  {
+    codigo_prestamo: "PR-5016",
     libro: {
       codigo_libro: "LIB-00019",
       titulo: "El libro del tropico"
@@ -174,170 +317,16 @@ db.prestamos.insertMany([
       nombre_completo: ""
     },
     fechas: {
-      fecha_salida: new Date("2026-05-03T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-05-10T00:00:00Z"),
-      fecha_devolucion_real: new Date("2026-05-12T00:00:00Z")
-    },
-    estado_prestamo: "Retrasado"
-  },
-  {
-    codigo_prestamo: "PR-5008",
-    libro: {
-      codigo_libro: "LIB-00020",
-      titulo: "Ensayo sobre el destino"
-    },
-    usuario: {
-      codigo_usuario: "",
-      nombre_completo: ""
-    },
-    fechas: {
-      fecha_salida: new Date("2026-05-04T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-05-11T00:00:00Z"),
-      fecha_devolucion_real: new Date("2026-05-09T00:00:00Z")
-    },
-    estado_prestamo: "Devuelto"
-  },
-  {
-    codigo_prestamo: "PR-5009",
-    libro: {
-      codigo_libro: "LIB-00021",
-      titulo: "El cuento de la mascara"
-    },
-    usuario: {
-      codigo_usuario: "",
-      nombre_completo: ""
-    },
-    fechas: {
-      fecha_salida: new Date("2026-05-05T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-05-12T00:00:00Z"),
-      fecha_devolucion_real: new Date("2026-05-11T00:00:00Z")
-    },
-    estado_prestamo: "Activo"
-  },
-  {
-    codigo_prestamo: "PR-5010",
-    libro: {
-      codigo_libro: "LIB-00022",
-      titulo: "Corazon adentro"
-    },
-    usuario: {
-      codigo_usuario: "",
-      nombre_completo: ""
-    },
-    fechas: {
-      fecha_salida: new Date("2026-05-06T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-05-13T00:00:00Z"),
-      fecha_devolucion_real: new Date("2026-05-15T00:00:00Z")
-    },
-    estado_prestamo: "Retrasado"
-  },
-  {
-    codigo_prestamo: "PR-5011",
-    libro: {
-      codigo_libro: "LIB-00023",
-      titulo: "La presencia de la poesia"
-    },
-    usuario: {
-      codigo_usuario: "",
-      nombre_completo: ""
-    },
-    fechas: {
-      fecha_salida: new Date("2026-05-07T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-05-14T00:00:00Z"),
-      fecha_devolucion_real: new Date("2026-05-12T00:00:00Z")
-    },
-    estado_prestamo: "Devuelto"
-  },
-  {
-    codigo_prestamo: "PR-5012",
-    libro: {
-      codigo_libro: "LIB-00024",
-      titulo: "La ventana en el rostro"
-    },
-    usuario: {
-      codigo_usuario: "",
-      nombre_completo: ""
-    },
-    fechas: {
-      fecha_salida: new Date("2026-05-08T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-05-15T00:00:00Z"),
-      fecha_devolucion_real: new Date("2026-05-14T00:00:00Z")
-    },
-    estado_prestamo: "Activo"
-  },
-  {
-    codigo_prestamo: "PR-5013",
-    libro: {
-      codigo_libro: "LIB-00025",
-      titulo: "Cuentos de barro"
-    },
-    usuario: {
-      codigo_usuario: "",
-      nombre_completo: ""
-    },
-    fechas: {
-      fecha_salida: new Date("2026-05-09T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-05-16T00:00:00Z"),
-      fecha_devolucion_real: new Date("2026-05-18T00:00:00Z")
-    },
-    estado_prestamo: "Retrasado"
-  },
-  {
-    codigo_prestamo: "PR-5014",
-    libro: {
-      codigo_libro: "LIB-00026",
-      titulo: "El turno del ofendido"
-    },
-    usuario: {
-      codigo_usuario: "",
-      nombre_completo: ""
-    },
-    fechas: {
-      fecha_salida: new Date("2026-05-10T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-05-17T00:00:00Z"),
-      fecha_devolucion_real: new Date("2026-05-15T00:00:00Z")
-    },
-    estado_prestamo: "Devuelto"
-  },
-  {
-    codigo_prestamo: "PR-5015",
-    libro: {
-      codigo_libro: "LIB-00027",
-      titulo: "El valle de las hamacas"
-    },
-    usuario: {
-      codigo_usuario: "",
-      nombre_completo: ""
-    },
-    fechas: {
-      fecha_salida: new Date("2026-05-11T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-05-18T00:00:00Z"),
-      fecha_devolucion_real: new Date("2026-05-17T00:00:00Z")
-    },
-    estado_prestamo: "Activo"
-  },
-  {
-    codigo_prestamo: "PR-5016",
-    libro: {
-      codigo_libro: "LIB-00028",
-      titulo: "Tierra de infancia"
-    },
-    usuario: {
-      codigo_usuario: "",
-      nombre_completo: ""
-    },
-    fechas: {
       fecha_salida: new Date("2026-05-12T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-05-19T00:00:00Z"),
-      fecha_devolucion_real: new Date("2026-05-21T00:00:00Z")
+      fecha_limite_devolucion: new Date("2026-05-19T00:00:00Z")
     },
     estado_prestamo: "Retrasado"
   },
   {
     codigo_prestamo: "PR-5017",
     libro: {
-      codigo_libro: "LIB-00029",
-      titulo: "La sal del mundo"
+      codigo_libro: "LIB-00020",
+      titulo: "Las siete cuerdas de la lira"
     },
     usuario: {
       codigo_usuario: "",
@@ -345,7 +334,7 @@ db.prestamos.insertMany([
     },
     fechas: {
       fecha_salida: new Date("2026-05-13T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-05-20T00:00:00Z"),
+      fecha_limite_devolucion: new Date("2026-05-20T00:00:00Z"),
       fecha_devolucion_real: new Date("2026-05-18T00:00:00Z")
     },
     estado_prestamo: "Devuelto"
@@ -353,8 +342,8 @@ db.prestamos.insertMany([
   {
     codigo_prestamo: "PR-5018",
     libro: {
-      codigo_libro: "LIB-00030",
-      titulo: "El dinero maldito"
+      codigo_libro: "LIB-00021",
+      titulo: "Andanzas y Malandanzas"
     },
     usuario: {
       codigo_usuario: "",
@@ -362,16 +351,15 @@ db.prestamos.insertMany([
     },
     fechas: {
       fecha_salida: new Date("2026-05-14T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-05-21T00:00:00Z"),
-      fecha_devolucion_real: new Date("2026-05-20T00:00:00Z")
+      fecha_limite_devolucion: new Date("2026-05-21T00:00:00Z")
     },
     estado_prestamo: "Activo"
   },
   {
     codigo_prestamo: "PR-5019",
     libro: {
-      codigo_libro: "LIB-00031",
-      titulo: "Luz negra"
+      codigo_libro: "LIB-00022",
+      titulo: "Corason con S"
     },
     usuario: {
       codigo_usuario: "",
@@ -379,16 +367,15 @@ db.prestamos.insertMany([
     },
     fechas: {
       fecha_salida: new Date("2026-05-15T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-05-22T00:00:00Z"),
-      fecha_devolucion_real: new Date("2026-05-24T00:00:00Z")
+      fecha_limite_devolucion: new Date("2026-05-22T00:00:00Z")
     },
     estado_prestamo: "Retrasado"
   },
   {
     codigo_prestamo: "PR-5020",
     libro: {
-      codigo_libro: "LIB-00032",
-      titulo: "La cancion del mundo"
+      codigo_libro: "LIB-00023",
+      titulo: "La Princesa Citala"
     },
     usuario: {
       codigo_usuario: "",
@@ -396,7 +383,7 @@ db.prestamos.insertMany([
     },
     fechas: {
       fecha_salida: new Date("2026-05-16T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-05-23T00:00:00Z"),
+      fecha_limite_devolucion: new Date("2026-05-23T00:00:00Z"),
       fecha_devolucion_real: new Date("2026-05-21T00:00:00Z")
     },
     estado_prestamo: "Devuelto"
@@ -404,8 +391,8 @@ db.prestamos.insertMany([
   {
     codigo_prestamo: "PR-5021",
     libro: {
-      codigo_libro: "LIB-00033",
-      titulo: "Los faroles"
+      codigo_libro: "LIB-00024",
+      titulo: "Campanario"
     },
     usuario: {
       codigo_usuario: "",
@@ -413,16 +400,15 @@ db.prestamos.insertMany([
     },
     fechas: {
       fecha_salida: new Date("2026-05-17T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-05-24T00:00:00Z"),
-      fecha_devolucion_real: new Date("2026-05-23T00:00:00Z")
+      fecha_limite_devolucion: new Date("2026-05-24T00:00:00Z")
     },
     estado_prestamo: "Activo"
   },
   {
     codigo_prestamo: "PR-5022",
     libro: {
-      codigo_libro: "LIB-00034",
-      titulo: "Los cuentos de mi tia panchita"
+      codigo_libro: "LIB-00025",
+      titulo: "La Muerte de la Tortola"
     },
     usuario: {
       codigo_usuario: "",
@@ -430,16 +416,15 @@ db.prestamos.insertMany([
     },
     fechas: {
       fecha_salida: new Date("2026-05-18T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-05-25T00:00:00Z"),
-      fecha_devolucion_real: new Date("2026-05-27T00:00:00Z")
+      fecha_limite_devolucion: new Date("2026-05-25T00:00:00Z")
     },
     estado_prestamo: "Retrasado"
   },
   {
     codigo_prestamo: "PR-5023",
     libro: {
-      codigo_libro: "LIB-00035",
-      titulo: "El asco"
+      codigo_libro: "LIB-00026",
+      titulo: "Pacuas de oro"
     },
     usuario: {
       codigo_usuario: "",
@@ -447,7 +432,7 @@ db.prestamos.insertMany([
     },
     fechas: {
       fecha_salida: new Date("2026-05-19T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-05-26T00:00:00Z"),
+      fecha_limite_devolucion: new Date("2026-05-26T00:00:00Z"),
       fecha_devolucion_real: new Date("2026-05-24T00:00:00Z")
     },
     estado_prestamo: "Devuelto"
@@ -455,8 +440,8 @@ db.prestamos.insertMany([
   {
     codigo_prestamo: "PR-5024",
     libro: {
-      codigo_libro: "LIB-00036",
-      titulo: "La diáspora"
+      codigo_libro: "LIB-00027",
+      titulo: "A la Salida del vapor"
     },
     usuario: {
       codigo_usuario: "",
@@ -464,16 +449,15 @@ db.prestamos.insertMany([
     },
     fechas: {
       fecha_salida: new Date("2026-05-20T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-05-27T00:00:00Z"),
-      fecha_devolucion_real: new Date("2026-05-26T00:00:00Z")
+      fecha_limite_devolucion: new Date("2026-05-27T00:00:00Z")
     },
     estado_prestamo: "Activo"
   },
   {
     codigo_prestamo: "PR-5025",
     libro: {
-      codigo_libro: "LIB-00037",
-      titulo: "El arma en el hombre"
+      codigo_libro: "LIB-00028",
+      titulo: "Cuentos de barro"
     },
     usuario: {
       codigo_usuario: "",
@@ -481,16 +465,15 @@ db.prestamos.insertMany([
     },
     fechas: {
       fecha_salida: new Date("2026-05-21T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-05-28T00:00:00Z"),
-      fecha_devolucion_real: new Date("2026-05-30T00:00:00Z")
+      fecha_limite_devolucion: new Date("2026-05-28T00:00:00Z")
     },
     estado_prestamo: "Retrasado"
   },
   {
     codigo_prestamo: "PR-5026",
     libro: {
-      codigo_libro: "LIB-00038",
-      titulo: "La muerte de la paloma"
+      codigo_libro: "LIB-00029",
+      titulo: "Mitologia de Cuscatlan"
     },
     usuario: {
       codigo_usuario: "",
@@ -498,7 +481,7 @@ db.prestamos.insertMany([
     },
     fechas: {
       fecha_salida: new Date("2026-05-22T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-05-29T00:00:00Z"),
+      fecha_limite_devolucion: new Date("2026-05-29T00:00:00Z"),
       fecha_devolucion_real: new Date("2026-05-27T00:00:00Z")
     },
     estado_prestamo: "Devuelto"
@@ -506,8 +489,8 @@ db.prestamos.insertMany([
   {
     codigo_prestamo: "PR-5027",
     libro: {
-      codigo_libro: "LIB-00039",
-      titulo: "El libro de los desvarios"
+      codigo_libro: "LIB-00030",
+      titulo: "El Asco"
     },
     usuario: {
       codigo_usuario: "",
@@ -515,16 +498,15 @@ db.prestamos.insertMany([
     },
     fechas: {
       fecha_salida: new Date("2026-05-23T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-05-30T00:00:00Z"),
-      fecha_devolucion_real: new Date("2026-05-29T00:00:00Z")
+      fecha_limite_devolucion: new Date("2026-05-30T00:00:00Z")
     },
     estado_prestamo: "Activo"
   },
   {
     codigo_prestamo: "PR-5028",
     libro: {
-      codigo_libro: "LIB-00040",
-      titulo: "La loca de gandoca"
+      codigo_libro: "LIB-00031",
+      titulo: "A-B-Sudario"
     },
     usuario: {
       codigo_usuario: "",
@@ -532,16 +514,15 @@ db.prestamos.insertMany([
     },
     fechas: {
       fecha_salida: new Date("2026-05-24T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-05-31T00:00:00Z"),
-      fecha_devolucion_real: new Date("2026-06-02T00:00:00Z")
+      fecha_limite_devolucion: new Date("2026-05-31T00:00:00Z")
     },
     estado_prestamo: "Retrasado"
   },
   {
     codigo_prestamo: "PR-5029",
     libro: {
-      codigo_libro: "LIB-00041",
-      titulo: "El tigre"
+      codigo_libro: "LIB-00032",
+      titulo: "Un dia en la vida"
     },
     usuario: {
       codigo_usuario: "",
@@ -549,7 +530,7 @@ db.prestamos.insertMany([
     },
     fechas: {
       fecha_salida: new Date("2026-05-25T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-06-01T00:00:00Z"),
+      fecha_limite_devolucion: new Date("2026-06-01T00:00:00Z"),
       fecha_devolucion_real: new Date("2026-05-30T00:00:00Z")
     },
     estado_prestamo: "Devuelto"
@@ -557,8 +538,8 @@ db.prestamos.insertMany([
   {
     codigo_prestamo: "PR-5030",
     libro: {
-      codigo_libro: "LIB-00042",
-      titulo: "La isla de los hombres solos"
+      codigo_libro: "LIB-00033",
+      titulo: "Una grieta en el agua"
     },
     usuario: {
       codigo_usuario: "",
@@ -566,16 +547,15 @@ db.prestamos.insertMany([
     },
     fechas: {
       fecha_salida: new Date("2026-05-26T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-06-02T00:00:00Z"),
-      fecha_devolucion_real: new Date("2026-06-01T00:00:00Z")
+      fecha_limite_devolucion: new Date("2026-06-02T00:00:00Z")
     },
     estado_prestamo: "Activo"
   },
   {
     codigo_prestamo: "PR-5031",
     libro: {
-      codigo_libro: "LIB-00043",
-      titulo: "Cuentos de cipotes"
+      codigo_libro: "LIB-00034",
+      titulo: "Dolor de Patria"
     },
     usuario: {
       codigo_usuario: "",
@@ -583,16 +563,15 @@ db.prestamos.insertMany([
     },
     fechas: {
       fecha_salida: new Date("2026-05-27T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-06-03T00:00:00Z"),
-      fecha_devolucion_real: new Date("2026-06-05T00:00:00Z")
+      fecha_limite_devolucion: new Date("2026-06-03T00:00:00Z")
     },
     estado_prestamo: "Retrasado"
   },
   {
     codigo_prestamo: "PR-5032",
     libro: {
-      codigo_libro: "LIB-00044",
-      titulo: "El principito"
+      codigo_libro: "LIB-00035",
+      titulo: "Los Cisnes"
     },
     usuario: {
       codigo_usuario: "",
@@ -600,7 +579,7 @@ db.prestamos.insertMany([
     },
     fechas: {
       fecha_salida: new Date("2026-05-28T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-06-04T00:00:00Z"),
+      fecha_limite_devolucion: new Date("2026-06-04T00:00:00Z"),
       fecha_devolucion_real: new Date("2026-06-02T00:00:00Z")
     },
     estado_prestamo: "Devuelto"
@@ -608,8 +587,8 @@ db.prestamos.insertMany([
   {
     codigo_prestamo: "PR-5033",
     libro: {
-      codigo_libro: "LIB-00045",
-      titulo: "El señor de las moscas"
+      codigo_libro: "LIB-00036",
+      titulo: "Luz negra"
     },
     usuario: {
       codigo_usuario: "",
@@ -617,16 +596,15 @@ db.prestamos.insertMany([
     },
     fechas: {
       fecha_salida: new Date("2026-05-29T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-06-05T00:00:00Z"),
-      fecha_devolucion_real: new Date("2026-06-04T00:00:00Z")
+      fecha_limite_devolucion: new Date("2026-06-05T00:00:00Z")
     },
     estado_prestamo: "Activo"
   },
   {
     codigo_prestamo: "PR-5034",
     libro: {
-      codigo_libro: "LIB-00046",
-      titulo: "La sombra del viento"
+      codigo_libro: "LIB-00037",
+      titulo: "Poemas"
     },
     usuario: {
       codigo_usuario: "",
@@ -634,16 +612,15 @@ db.prestamos.insertMany([
     },
     fechas: {
       fecha_salida: new Date("2026-05-30T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-06-06T00:00:00Z"),
-      fecha_devolucion_real: new Date("2026-06-08T00:00:00Z")
+      fecha_limite_devolucion: new Date("2026-06-06T00:00:00Z")
     },
     estado_prestamo: "Retrasado"
   },
   {
     codigo_prestamo: "PR-5035",
     libro: {
-      codigo_libro: "LIB-00047",
-      titulo: "El alquimista"
+      codigo_libro: "LIB-00038",
+      titulo: "Disparo en la catedral"
     },
     usuario: {
       codigo_usuario: "",
@@ -651,7 +628,7 @@ db.prestamos.insertMany([
     },
     fechas: {
       fecha_salida: new Date("2026-05-31T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-06-07T00:00:00Z"),
+      fecha_limite_devolucion: new Date("2026-06-07T00:00:00Z"),
       fecha_devolucion_real: new Date("2026-06-05T00:00:00Z")
     },
     estado_prestamo: "Devuelto"
@@ -659,8 +636,8 @@ db.prestamos.insertMany([
   {
     codigo_prestamo: "PR-5036",
     libro: {
-      codigo_libro: "LIB-00048",
-      titulo: "El codigo da vinci"
+      codigo_libro: "LIB-00039",
+      titulo: "Vitrales"
     },
     usuario: {
       codigo_usuario: "",
@@ -668,16 +645,15 @@ db.prestamos.insertMany([
     },
     fechas: {
       fecha_salida: new Date("2026-06-01T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-06-08T00:00:00Z"),
-      fecha_devolucion_real: new Date("2026-06-07T00:00:00Z")
+      fecha_limite_devolucion: new Date("2026-06-08T00:00:00Z")
     },
     estado_prestamo: "Activo"
   },
   {
     codigo_prestamo: "PR-5037",
     libro: {
-      codigo_libro: "LIB-00049",
-      titulo: "El resplandor"
+      codigo_libro: "LIB-00040",
+      titulo: "Confesiones a Marcia"
     },
     usuario: {
       codigo_usuario: "",
@@ -685,16 +661,15 @@ db.prestamos.insertMany([
     },
     fechas: {
       fecha_salida: new Date("2026-06-02T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-06-09T00:00:00Z"),
-      fecha_devolucion_real: new Date("2026-06-11T00:00:00Z")
+      fecha_limite_devolucion: new Date("2026-06-09T00:00:00Z")
     },
     estado_prestamo: "Retrasado"
   },
   {
     codigo_prestamo: "PR-5038",
     libro: {
-      codigo_libro: "LIB-00050",
-      titulo: "It"
+      codigo_libro: "LIB-00041",
+      titulo: "Equis o la pequeña historia de gran amor"
     },
     usuario: {
       codigo_usuario: "",
@@ -702,7 +677,7 @@ db.prestamos.insertMany([
     },
     fechas: {
       fecha_salida: new Date("2026-06-03T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-06-10T00:00:00Z"),
+      fecha_limite_devolucion: new Date("2026-06-10T00:00:00Z"),
       fecha_devolucion_real: new Date("2026-06-08T00:00:00Z")
     },
     estado_prestamo: "Devuelto"
@@ -710,8 +685,8 @@ db.prestamos.insertMany([
   {
     codigo_prestamo: "PR-5039",
     libro: {
-      codigo_libro: "LIB-00051",
-      titulo: "Carrie"
+      codigo_libro: "LIB-00042",
+      titulo: "Real Diccionario de al Vigar Lengua Guanaca"
     },
     usuario: {
       codigo_usuario: "",
@@ -719,16 +694,15 @@ db.prestamos.insertMany([
     },
     fechas: {
       fecha_salida: new Date("2026-06-04T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-06-11T00:00:00Z"),
-      fecha_devolucion_real: new Date("2026-06-10T00:00:00Z")
+      fecha_limite_devolucion: new Date("2026-06-11T00:00:00Z")
     },
     estado_prestamo: "Activo"
   },
   {
     codigo_prestamo: "PR-5040",
     libro: {
-      codigo_libro: "LIB-00052",
-      titulo: "Misery"
+      codigo_libro: "LIB-00043",
+      titulo: "El Corneta"
     },
     usuario: {
       codigo_usuario: "",
@@ -736,8 +710,7 @@ db.prestamos.insertMany([
     },
     fechas: {
       fecha_salida: new Date("2026-06-05T00:00:00Z"),
-      fecha_devolucion_esperada: new Date("2026-06-12T00:00:00Z"),
-      fecha_devolucion_real: new Date("2026-06-14T00:00:00Z")
+      fecha_limite_devolucion: new Date("2026-06-12T00:00:00Z")
     },
     estado_prestamo: "Retrasado"
   }
