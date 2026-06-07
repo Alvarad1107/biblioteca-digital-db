@@ -31,7 +31,7 @@ db.createCollection("Prestamos", {
         },
         fechas: {
           bsonType: "object",
-          required: ["fecha_salida", "fecha_limite_devolucion"],
+          required: ["fecha_salida", "fecha_limite_devolucion", "fecha_devolucion_real"],
           properties: {
             fecha_salida: {
               bsonType: "date",
