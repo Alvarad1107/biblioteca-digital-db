@@ -2,7 +2,6 @@
 use("Biblioteca_Digital");
 
 // Crear colección usuarios con validación.
-
 db.createCollection("usuario", {
     validator: {
         $jsonSchema: {
@@ -28,7 +27,7 @@ db.createCollection("usuario", {
                 },
                 nivel_acceso: { 
                     bsonType: "string", 
-                    enum: ["Administrador", "Bibliotecario", "Asistente"] 
+                    enum: ["Administrador", "Bibliotecario", "Supervisor"] 
                 },
                 estado: { 
                     bsonType: "string", 
@@ -40,38 +39,45 @@ db.createCollection("usuario", {
 });
 
 // Inserción de datos.
-
 db.usuario.insertMany([
     { 
         "codigo_usuario": "USR-ADM-001", 
         "nombre_completo": "Elena Vásquez", 
         "correo": "elena.admin@biblioteca.com", 
-        "clave": "admin123", 
+        "clave": "admin1234", 
         "nivel_acceso": "Administrador", 
         "estado": "Activo" 
     },
     { 
-        "codigo_usuario": "USR-BIB-002", 
+        "codigo_usuario": "USR-SUP-001", 
+        "nombre_completo": "María Fernanda López", 
+        "correo": "maria.sup@biblioteca.com", 
+        "clave": "super1234", 
+        "nivel_acceso": "Supervisor", 
+        "estado": "Activo" 
+    },
+    { 
+        "codigo_usuario": "USR-BIB-001", 
         "nombre_completo": "Roberto Gómez", 
         "correo": "roberto.bib@biblioteca.com", 
-        "clave": "biblio123", 
+        "clave": "biblio1234", 
         "nivel_acceso": "Bibliotecario", 
         "estado": "Activo" 
     },
     { 
-        "codigo_usuario": "USR-ASI-003", 
-        "nombre_completo": "María Fernanda López", 
-        "correo": "maria.asi@biblioteca.com", 
-        "clave": "asistente123", 
-        "nivel_acceso": "Asistente", 
-        "estado": "Activo" 
-    },
-    { 
-        "codigo_usuario": "USR-BIB-004", 
+        "codigo_usuario": "USR-BIB-002", 
         "nombre_completo": "Carlos Alberto Martínez", 
         "correo": "carlos.bib@biblioteca.com", 
-        "clave": "biblio456", 
+        "clave": "biblio5678", 
         "nivel_acceso": "Bibliotecario", 
-        "estado": "Inactivo" 
+        "estado": "Activo" 
+    },
+    { 
+        "codigo_usuario": "USR-BIB-003", 
+        "nombre_completo": "Lucía Fernández", 
+        "correo": "lucia.bib@biblioteca.com", 
+        "clave": "biblio9012", 
+        "nivel_acceso": "Bibliotecario", 
+        "estado": "Activo" 
     }
 ]);
