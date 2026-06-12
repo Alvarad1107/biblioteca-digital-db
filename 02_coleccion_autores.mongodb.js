@@ -49,7 +49,7 @@ db.Autores.insertMany([
     nombre:"Laura",
     apellido:"Esquivel",
     nacionalidad:"Mexicana",
-    fecha_nacimiento:"30-09-1950",
+    fecha_nacimiento:30-09-1950,
     estado:"Activo",
   },
   {
@@ -57,7 +57,7 @@ db.Autores.insertMany([
     nombre:"Emma",
     apellido:"Dolujanoff",
     nacionalidad:"Mexicana",
-    fecha_nacimiento:"08-12-1922",
+    fecha_nacimiento:08-12-1922,
     estado:"Activo",
     },
     {
@@ -65,7 +65,7 @@ db.Autores.insertMany([
     nombre:"Agustín",
     apellido:"Yáñez",
     nacionalidad:"Mexicano",
-    fecha_nacimiento:"04-05-1904",
+    fecha_nacimiento:04-05-1904,
     estado:"Activo",
     },
     {
@@ -73,7 +73,7 @@ db.Autores.insertMany([
     nombre:"Ignacio Manuel",
     apellido:"Altamirano",
     nacionalidad:"mexicano",
-    fecha_nacimiento:"13-11-1834",
+    fecha_nacimiento:13-11-1834,
     estado:"Activo",
     },
     {
@@ -81,7 +81,7 @@ db.Autores.insertMany([
     nombre:"Rudolfo",
     apellido:"Anaya",
     nacionalidad:"mexicano",
-    fecha_nacimiento:"30-10-1937",
+    fecha_nacimiento:30-10-1937,
     estado:"Activo",
     },
     {
@@ -89,7 +89,7 @@ db.Autores.insertMany([
     nombre:"Carlos",
     apellido:"Fuentes",
     nacionalidad:"mexicano",
-    fecha_nacimiento:"11-11-1928",
+    fecha_nacimiento:11-11-1928,
     estado:"Activo",
     },
         {
@@ -97,7 +97,7 @@ db.Autores.insertMany([
     nombre:"Carlos Cuauhtémoc",
     apellido:"Sánchez",
     nacionalidad:"mexicano",
-    fecha_nacimiento:"15-04-1964",
+    fecha_nacimiento: 15-04-1964,
     estado:"Activo",
     },
         {
@@ -105,7 +105,7 @@ db.Autores.insertMany([
     nombre:"Santiago",
     apellido:"Genovés",
     nacionalidad:"mexicano",
-    fecha_nacimiento:"31-12-1923",
+    fecha_nacimiento:31-12-1923,
     estado:"Activo",
     },
         {
@@ -113,7 +113,7 @@ db.Autores.insertMany([
     nombre:"Salvador",
     apellido:"Reyes Nevares",
     nacionalidad:"mexicano",
-    fecha_nacimiento:"21-11-1924",
+    fecha_nacimiento:21-11-1924,
     estado:"",
     },
         {
@@ -121,7 +121,7 @@ db.Autores.insertMany([
     nombre:"Martín Luis",
     apellido:"Guzmán",
     nacionalidad:"mexicano",
-    fecha_nacimiento:"06-10-1887",
+    fecha_nacimiento:06-10-1887,
     estado:"Activo",
     },
         {
@@ -129,7 +129,7 @@ db.Autores.insertMany([
     nombre:"Artemio de Valle",
     apellido:"Arizpe",
     nacionalidad:"mexicano",
-    fecha_nacimiento:"25-01-1888",
+    fecha_nacimiento:25-01-1888,
     estado:"Activo",
     },
     {
@@ -137,7 +137,7 @@ db.Autores.insertMany([
     nombre:"José Joaquín",
     apellido:"Fernández de Lizardi",
     nacionalidad:"mexicano",
-    fecha_nacimiento:"15-10-1776",
+    fecha_nacimiento:15-10-1776,
     estado:"Activo",
     },
     {
@@ -145,7 +145,7 @@ db.Autores.insertMany([
     nombre:"Vicente",
     apellido:"Leñero",
     nacionalidad:"mexicano",
-    fecha_nacimiento:"09-06-1933",
+    fecha_nacimiento:09-06-1933,
     estado:"Activo",
     },
     {
@@ -153,7 +153,7 @@ db.Autores.insertMany([
     nombre:"Mariano",
     apellido:"Azuela",
     nacionalidad:"mexicano",
-    fecha_nacimiento:"01-01-1873",
+    fecha_nacimiento:01-01-1873,
     estado:"Activo",
     },
     {
@@ -161,7 +161,7 @@ db.Autores.insertMany([
     nombre:"Manou",
     apellido:"Dornbierer",
     nacionalidad:"mexicana",
-    fecha_nacimiento:"10-12-1936",
+    fecha_nacimiento:10-12-1936,
     estado:"",
     },
     {
@@ -169,7 +169,7 @@ db.Autores.insertMany([
     nombre:"Luis",
     apellido:"Spota",
     nacionalidad:"mexicano",
-    fecha_nacimiento:"13-06-1925",
+    fecha_nacimiento:13-06-1925,
     estado:"Activo",
         },
     {
@@ -177,7 +177,7 @@ db.Autores.insertMany([
     nombre:"Manou",
     apellido:"Dornbierer",
     nacionalidad:"mexicana",
-    fecha_nacimiento:"10-12-1936",
+    fecha_nacimiento:10-12-1936,
     estado:"",
     },
         
@@ -186,7 +186,7 @@ db.Autores.insertMany([
     nombre:"Miguel",
     apellido:" Álvarez Castro",
     nacionalidad:"Salvadoreño",
-    fecha_nacimiento:"29-09-1795",
+    fecha_nacimiento:29-09-1795,
     estado:"Activo",
     },
         
@@ -195,7 +195,7 @@ db.Autores.insertMany([
     nombre:"Francisco",
     apellido:"Gavidia",
     nacionalidad:"Salvadoreño",
-    fecha_nacimiento:"29-12-1863",
+    fecha_nacimiento:29-12-1863,
     estado:"",
     },
         
@@ -204,7 +204,7 @@ db.Autores.insertMany([
     nombre:"Arturo",
     apellido:"Ambrogi",
     nacionalidad:"Salvadoreño",
-    fecha_nacimiento:"19-10-1875",
+    fecha_nacimiento:19-10-1875,
     estado:"Activo",
     },
         
@@ -213,7 +213,7 @@ db.Autores.insertMany([
     nombre:"Alberto",
     apellido:"Masferrer",
     nacionalidad:"Salvadoreño",
-    fecha_nacimiento:"24-07-1868",
+    fecha_nacimiento:24-07-1868,
     estado:"Activo",
     },
        {
@@ -221,7 +221,7 @@ db.Autores.insertMany([
     nombre:"Alberto",
     apellido:"Rivas Bonilla",
     nacionalidad:"Salvadoreño",
-    fecha_nacimiento:"04-09-1891",
+    fecha_nacimiento:04-09-1891,
     estado:"Activo",
     },
        {
@@ -229,7 +229,7 @@ db.Autores.insertMany([
     nombre:"Serafin",
     apellido:"Quiteño",
     nacionalidad:"Salvadoreño",
-    fecha_nacimiento:"16-09-1906",
+    fecha_nacimiento:16-09-1906,
     estado:"Activo",
     },
        {
@@ -237,7 +237,7 @@ db.Autores.insertMany([
     nombre:"Raul",
     apellido:"Contreras",
     nacionalidad:"Salvadoreño",
-    fecha_nacimiento:"03-04-1896",
+    fecha_nacimiento:03-04-1896,
     estado:"Activo",
     },
        {
@@ -245,7 +245,7 @@ db.Autores.insertMany([
     nombre:"Ricardo",
     apellido:"Triagueros de León",
     nacionalidad:"Salvadoreño",
-    fecha_nacimiento:"13-11-1917",
+    fecha_nacimiento:13-11-1917,
     estado:"Activo",
     },
        {
@@ -253,7 +253,7 @@ db.Autores.insertMany([
     nombre:"Jose Maria",
     apellido:"Peralta Lagos",
     nacionalidad:"Salvadoreña",
-    fecha_nacimiento:"25-07-1873",
+    fecha_nacimiento:25-07-1873,
     estado:"Activo",
     },
        {
@@ -261,7 +261,7 @@ db.Autores.insertMany([
     nombre:"Vicente",
     apellido:"Rosales y Rosales",
     nacionalidad:"Salavadoreño",
-    fecha_nacimiento:"06-11-1894",
+    fecha_nacimiento:06-11-1894,
     estado:"Activo",
     },
        {
@@ -269,7 +269,7 @@ db.Autores.insertMany([
     nombre:"Juan José",
     apellido:"Cañas",
     nacionalidad:"Salvadoreño",
-    fecha_nacimiento:"19-01-1826",
+    fecha_nacimiento:19-01-1826,
     estado:"Activo",
     },
        {
@@ -277,7 +277,7 @@ db.Autores.insertMany([
     nombre:"Salvador",
     apellido:"Salazar Arrué",
     nacionalidad:"Salvadoreño",
-    fecha_nacimiento:"22-10-1899",
+    fecha_nacimiento:22-10-1899,
     estado:"Activo",
     },
        {
@@ -285,7 +285,7 @@ db.Autores.insertMany([
     nombre:"Miguel Ángel",
     apellido:"Espino",
     nacionalidad:"Salvadoreño",
-    fecha_nacimiento:"17-12-1902",
+    fecha_nacimiento:17-12-1902,
     estado:"Activo",
     },
        {
@@ -293,7 +293,7 @@ db.Autores.insertMany([
     nombre:"Horacio",
     apellido:"Castellanos Moya",
     nacionalidad:"Salvadoreño",
-    fecha_nacimiento:"21-11-1857",
+    fecha_nacimiento:21-11-1857,
     estado:"Activo",
     },
        {
@@ -301,7 +301,7 @@ db.Autores.insertMany([
     nombre:"Jacinta",
     apellido:"Escudos",
     nacionalidad:"Salvadoreña",
-    fecha_nacimiento:"01-09-1861",
+    fecha_nacimiento:01-09-1861,
     estado:"Activo",
     },
        {
@@ -309,7 +309,7 @@ db.Autores.insertMany([
     nombre:"Manlio",
     apellido:"Argueta",
     nacionalidad:"Salvadoreño",
-    fecha_nacimiento:"24-12-1935",
+    fecha_nacimiento:24-12-1935,
     estado:"Activo",
     },
        {
@@ -317,7 +317,7 @@ db.Autores.insertMany([
     nombre:"David",
     apellido:"Escobar Galindo",
     nacionalidad:"Salvadoreño",
-    fecha_nacimiento:"04-10-1943",
+    fecha_nacimiento:04-10-1943,
     estado:"Activo",
     },
        {
@@ -325,7 +325,7 @@ db.Autores.insertMany([
     nombre:"José",
     apellido:"Rutilio Quezada",
     nacionalidad:"Salvadoreño",
-    fecha_nacimiento:"30-09-1930",
+    fecha_nacimiento:30-09-1930,
     estado:"Activo",
     },
        {
@@ -333,7 +333,7 @@ db.Autores.insertMany([
     nombre:"Carlos",
     apellido:"Anchetta",
     nacionalidad:"Salvadoreño",
-    fecha_nacimiento:"10-12-1936",
+    fecha_nacimiento:10-12-1936,
     estado:"Activo",
     },
        {
@@ -341,7 +341,7 @@ db.Autores.insertMany([
     nombre:"Alvaro",
     apellido:"Menen Desleal",
     nacionalidad:"Salvadoreño",
-    fecha_nacimiento:"13-03-1931",
+    fecha_nacimiento:13-03-1931,
     estado:"Activo",
     },
        {
@@ -349,7 +349,7 @@ db.Autores.insertMany([
     nombre:"Alfonso",
     apellido:"Quijada Urías",
     nacionalidad:"Salvadoreño",
-    fecha_nacimiento:"08-12-1940",
+    fecha_nacimiento:08-12-1940,
     estado:"Activo",
     },
        {
@@ -357,7 +357,7 @@ db.Autores.insertMany([
     nombre:"Mario",
     apellido:"Bencastro",
     nacionalidad:"Salvadoreño",
-    fecha_nacimiento:"20-03-1949",
+    fecha_nacimiento:20-03-1949,
     estado:"Activo",
     },
        {
@@ -365,7 +365,7 @@ db.Autores.insertMany([
     nombre:"Alvaro",
     apellido:"Dario Lara",
     nacionalidad:"Salvadoreño",
-    fecha_nacimiento:"03-03-1966",
+    fecha_nacimiento:03-03-1966,
     estado:"Activo",
     },
        {
@@ -373,7 +373,7 @@ db.Autores.insertMany([
     nombre:"Rafael",
     apellido:"Mendoza",
     nacionalidad:"Salvadoreño",
-    fecha_nacimiento:"02-02-1943",
+    fecha_nacimiento:02-02-1943,
     estado:"Activo",
     },
        {
@@ -381,7 +381,7 @@ db.Autores.insertMany([
     nombre:"Ricardo",
     apellido:"Lindo",
     nacionalidad:"Salvadoreño",
-    fecha_nacimiento:"05-02-1947",
+    fecha_nacimiento:05-02-1947,
     estado:"Activo",
     },
        {
@@ -389,15 +389,15 @@ db.Autores.insertMany([
     nombre:"Joaquín",
     apellido:"Meza",
     nacionalidad:"Salvadoreño",
-    fecha_nacimiento:"24-03-1980",
+    fecha_nacimiento:24-03-1980,
     estado:"Activo",
     },
        {
     codigo_autor:AUT0044,
     nombre:"Roberto",
     apellido:"Castillo",
-    nacionalidad:"Salvadoreño",
-    fecha_nacimiento:"1950",
+    nacionalidad:"Salvadoreño,
+    fecha_nacimiento:1950,
     estado:"Activo",
     },
        {
@@ -405,7 +405,7 @@ db.Autores.insertMany([
     nombre:"Carmen",
     apellido:"González Huguet",
     nacionalidad:"Salvadoreño",
-    fecha_nacimiento:"15-11-1958",
+    fecha_nacimiento:15-11-1958,
     estado:"Activo",
     },
        {
@@ -413,7 +413,7 @@ db.Autores.insertMany([
     nombre:"Carlos",
     apellido:"Balmore Fuentes",
     nacionalidad:"Salvadoreño",
-    fecha_nacimiento:"29-12-1955",
+    fecha_nacimiento:29-12-1955,
     estado:"Activo",
     },
        {
@@ -421,7 +421,7 @@ db.Autores.insertMany([
     nombre:"Luis Armando",
     apellido:"González",
     nacionalidad:"Salvadoreño",
-    fecha_nacimiento:"26-04-1961",
+    fecha_nacimiento:26-04-1961,
     estado:"Activo",
     },
        {
@@ -429,7 +429,7 @@ db.Autores.insertMany([
     nombre:"Marvin",
     apellido:"Galeas",
     nacionalidad:"Salvadoreño",
-    fecha_nacimiento:"12-06-1956",
+    fecha_nacimiento:12-06-1956,
     estado:"Activo",
     },
        {
@@ -437,7 +437,7 @@ db.Autores.insertMany([
     nombre:"Roque",
     apellido:"Dalton",
     nacionalidad:"Salvadoreño",
-    fecha_nacimiento:"14-04-1935",
+    fecha_nacimiento:14-04-1935,
     estado:"Activo",
     },
        {
@@ -445,7 +445,7 @@ db.Autores.insertMany([
     nombre:"Claudia",
     apellido:"Lars",
     nacionalidad:"Salvadoreña",
-    fecha_nacimiento:"20-12-1899",
+    fecha_nacimiento:20-12-1899,
     estado:"Activo",
     },
        {
@@ -453,7 +453,7 @@ db.Autores.insertMany([
     nombre:"Alfredo",
     apellido:"Espino",
     nacionalidad:"Salvadoreño",
-    fecha_nacimiento:"08-01-1900",
+    fecha_nacimiento:08-01-1900,
     estado:"Activo",
     },
        {
@@ -461,7 +461,7 @@ db.Autores.insertMany([
     nombre:"Oswaldo",
     apellido:"Escobar Velado",
     nacionalidad:"Salvadoreño",
-    fecha_nacimiento:"11-10-1919",
+    fecha_nacimiento:11-10-1919,
     estado:"Activo",
     },
        {
@@ -469,7 +469,7 @@ db.Autores.insertMany([
     nombre:"Pedro",
     apellido:"Geoffroy Rivas",
     nacionalidad:"Salvadoreño",
-    fecha_nacimiento:"16-09-1908",
+    fecha_nacimiento:16-09-1908,
     estado:"Activo",
     },
        {
@@ -477,7 +477,7 @@ db.Autores.insertMany([
     nombre:"Matielde Elena",
     apellido:"López",
     nacionalidad:"Salvadoreña",
-    fecha_nacimiento:"20-02-1920",
+    fecha_nacimiento:20-02-1920,
     estado:"Activo",
     },
        {
@@ -485,7 +485,7 @@ db.Autores.insertMany([
     nombre:"Roberto",
     apellido:"Armijo",
     nacionalidad:"Salvadoreño",
-    fecha_nacimiento:"13-12-1937",
+    fecha_nacimiento:13-12-1937,
     estado:"Activo",
     },
        {
@@ -493,7 +493,7 @@ db.Autores.insertMany([
     nombre:"Mercedes",
     apellido:"Duran",
     nacionalidad:"Salvadoreña",
-    fecha_nacimiento:"09-09-1933",
+    fecha_nacimiento:09-09-1933,
     estado:"Activo",
     },
        {
@@ -501,7 +501,7 @@ db.Autores.insertMany([
     nombre:"Italo",
     apellido:"López Vallecillos",
     nacionalidad:"Salvadoreño",
-    fecha_nacimiento:"15-11-1932",
+    fecha_nacimiento:15-11-1932,
     estado:"Activo",
     },
        {
@@ -509,7 +509,7 @@ db.Autores.insertMany([
     nombre:"Jorge",
     apellido:"Galan",
     nacionalidad:"Salvadoreño",
-    fecha_nacimiento:"1973",
+    fecha_nacimiento:1973,
     estado:"Activo",
     },
        {
@@ -517,7 +517,7 @@ db.Autores.insertMany([
     nombre:"Maura",
     apellido:"Echeverría",
     nacionalidad:"Salvadoreña",
-    fecha_nacimiento:"03-05-1935",
+    fecha_nacimiento:03-05-1935,
     estado:"Activo",
     },
        {
@@ -525,7 +525,7 @@ db.Autores.insertMany([
     nombre:"Krisma",
     apellido:"Mancia",
     nacionalidad:"Salvadoreña",
-    fecha_nacimiento:"13-02-1980",
+    fecha_nacimiento:13-02-1980,
     estado:"Activo",
     },
 
