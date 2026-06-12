@@ -600,17 +600,17 @@ db.insertMany([
 },
             {
         codigo_libro: 'LIB0031',
-        titulo:"",
-        anio_publicacion: NumberInt(),
+        titulo:"A-B-Sudario",
+        anio_publicacion: NumberInt(2023),
         autores: [
     {
         codigo_autor: 'AUT0031',
-        nombre_completo: ''
+        nombre_completo: 'Jacinta Escudos'
     }
     ],
     categorias:[
-    "Novela",
-    "Narrativa de Vanguardia"
+    "Posmoderna",
+    "Experimental y Fragmentaria"
     ],
     existencias_totales: NumberInt('15'),
     existencias_disponibles: NumberInt('10'),
@@ -618,17 +618,17 @@ db.insertMany([
 },
             {
         codigo_libro: 'LIB0032',
-        titulo:"",
-        anio_publicacion: NumberInt(),
+        titulo:"Un dia en la vida",
+        anio_publicacion: NumberInt(1980),
         autores: [
     {
         codigo_autor: 'AUT0032',
-        nombre_completo: ''
+        nombre_completo: 'Mandilo Argueta'
     }
     ],
     categorias:[
-    "Novela",
-    "Narrativa de Vanguardia"
+    "Polifonica",
+    "Novela Testimonial"
     ],
     existencias_totales: NumberInt('15'),
     existencias_disponibles: NumberInt('10'),
@@ -636,17 +636,17 @@ db.insertMany([
 },
             {
         codigo_libro: 'LIB0033',
-        titulo:"",
-        anio_publicacion: NumberInt(),
+        titulo:"Una grieta en el agua",
+        anio_publicacion: NumberInt(1972),
         autores: [
     {
         codigo_autor: 'AUT0033',
-        nombre_completo: ''
+        nombre_completo: 'David Escobar Galindo'
     }
     ],
     categorias:[
-    "Novela",
-    "Narrativa de Vanguardia"
+    "Novela Corta de Corte Psicologico",
+    "Thirller Politico de Ficcion"
     ],
     existencias_totales: NumberInt('15'),
     existencias_disponibles: NumberInt('10'),
@@ -654,17 +654,17 @@ db.insertMany([
 },
             {
         codigo_libro: 'LIB0034',
-        titulo:"",
-        anio_publicacion: NumberInt(),
+        titulo:"Dolor de Patria",
+        anio_publicacion: NumberInt(1984),
         autores: [
     {
         codigo_autor: 'AUT0034',
-        nombre_completo: ''
+        nombre_completo: 'Jose Rutilio Quezada'
     }
     ],
     categorias:[
-    "Novela",
-    "Narrativa de Vanguardia"
+    "Ficcion Historico y Testimonial",
+    "Narrativa de denuncia social y Agraria"
     ],
     existencias_totales: NumberInt('15'),
     existencias_disponibles: NumberInt('10'),
@@ -672,17 +672,17 @@ db.insertMany([
 },
             {
         codigo_libro: 'LIB0035',
-        titulo:"",
-        anio_publicacion: NumberInt(),
+        titulo:"Los Cisnes",
+        anio_publicacion: NumberInt(2013),
         autores: [
     {
         codigo_autor: 'AUT0035',
-        nombre_completo: ''
+        nombre_completo: 'Carlos Anchetta'
     }
     ],
     categorias:[
-    "Novela",
-    "Narrativa de Vanguardia"
+    "Novela corta de Ficcion Meta-literaria",
+    "Narrativa Existencial y Psicologica"
     ],
     existencias_totales: NumberInt('15'),
     existencias_disponibles: NumberInt('10'),
@@ -690,17 +690,17 @@ db.insertMany([
 },
             {
         codigo_libro: 'LIB0036',
-        titulo:"",
-        anio_publicacion: NumberInt(),
+        titulo:"Luz negra",
+        anio_publicacion: NumberInt(1962),
         autores: [
     {
         codigo_autor: 'AUT0036',
-        nombre_completo: ''
+        nombre_completo: 'Alvaro Menen Desleal'
     }
     ],
     categorias:[
-    "Novela",
-    "Narrativa de Vanguardia"
+    "Teatro del absurdo",
+    "drama existencial de la dramatrugia"
     ],
     existencias_totales: NumberInt('15'),
     existencias_disponibles: NumberInt('10'),
@@ -708,17 +708,18 @@ db.insertMany([
 },
             {
         codigo_libro: 'LIB0037',
-        titulo:"",
-        anio_publicacion: NumberInt(1938),
+        titulo:"Poemas",
+        anio_publicacion: NumberInt(1967),
         autores: [
     {
         codigo_autor: 'AUT0037',
-        nombre_completo: ''
+        nombre_completo: 'Alfonso Quijada Urias'
     }
     ],
     categorias:[
-    "Novela",
-    "Narrativa de Vanguardia"
+    "Lirico",
+    "Poesia de Vanguardia",
+    "Lirica Existencial y Psicologica"
     ],
     existencias_totales: NumberInt('15'),
     existencias_disponibles: NumberInt('10'),
@@ -726,17 +727,17 @@ db.insertMany([
 },
             {
         codigo_libro: 'LIB0038',
-        titulo:"",
-        anio_publicacion: NumberInt(1938),
+        titulo:"Disparo en la catedral",
+        anio_publicacion: NumberInt(1984),
         autores: [
     {
         codigo_autor: 'AUT0038',
-        nombre_completo: ''
+        nombre_completo: 'Mario Bencastro'
     }
     ],
     categorias:[
-    "Novela",
-    "Narrativa de Vanguardia"
+    "Novela de Ficcion Historica",
+    "Testimonial"
     ],
     existencias_totales: NumberInt('15'),
     existencias_disponibles: NumberInt('10'),
@@ -744,17 +745,17 @@ db.insertMany([
 },
             {
         codigo_libro: 'LIB0039',
-        titulo:"",
-        anio_publicacion: NumberInt(1938),
+        titulo:"Vitrales",
+        anio_publicacion: NumberInt(1987),
         autores: [
     {
         codigo_autor: 'AUT0039',
-        nombre_completo: ''
+        nombre_completo: 'Alvaro Dario Lara'
     }
     ],
     categorias:[
-    "Novela",
-    "Narrativa de Vanguardia"
+    "Lirico",
+    " Poesia de la Generacion de los Ochenta"
     ],
     existencias_totales: NumberInt('15'),
     existencias_disponibles: NumberInt('10'),
@@ -762,17 +763,18 @@ db.insertMany([
 },
             {
         codigo_libro: 'LIB0040',
-        titulo:"",
-        anio_publicacion: NumberInt(1938),
+        titulo:"Confesiones a Marcia",
+        anio_publicacion: NumberInt(1970),
         autores: [
     {
         codigo_autor: 'AUT0040',
-        nombre_completo: ''
+        nombre_completo: 'Rafael Mendoza'
     }
     ],
     categorias:[
-    "Novela",
-    "Narrativa de Vanguardia"
+    "Lirico",
+    "Poesia",
+    "Generacion de los Setenta"
     ],
     existencias_totales: NumberInt('15'),
     existencias_disponibles: NumberInt('10'),
@@ -780,17 +782,17 @@ db.insertMany([
 },
             {
         codigo_libro: 'LIB0041',
-        titulo:"",
-        anio_publicacion: NumberInt(1938),
+        titulo:"Equis o la pequeña historia de gran amor",
+        anio_publicacion: NumberInt(1976),
         autores: [
     {
         codigo_autor: 'AUT0041',
-        nombre_completo: ''
+        nombre_completo: 'Ricardo Lindo'
     }
     ],
     categorias:[
-    "Novela",
-    "Narrativa de Vanguardia"
+    "Novela Experimental",
+    "Narrativa del Realismo Fantastico y Surrealismo."
     ],
     existencias_totales: NumberInt('15'),
     existencias_disponibles: NumberInt('10'),
@@ -798,17 +800,17 @@ db.insertMany([
 },
             {
         codigo_libro: 'LIB0042',
-        titulo:"",
-        anio_publicacion: NumberInt(1938),
+        titulo:"Real Diccionario de al Vigar Lengua Guanaca",
+        anio_publicacion: NumberInt(2009),
         autores: [
     {
         codigo_autor: 'AUT0042',
-        nombre_completo: ''
+        nombre_completo: 'Joaquin Meza'
     }
     ],
     categorias:[
-    "Novela",
-    "Narrativa de Vanguardia"
+    "Diccionario Lexicografico",
+    "Linguistico"
     ],
     existencias_totales: NumberInt('15'),
     existencias_disponibles: NumberInt('10'),
@@ -816,17 +818,17 @@ db.insertMany([
 },
             {
         codigo_libro: 'LIB0043',
-        titulo:"",
-        anio_publicacion: NumberInt(1938),
+        titulo:"El Corneta",
+        anio_publicacion: NumberInt(1981),
         autores: [
     {
         codigo_autor: 'AUT0043',
-        nombre_completo: ''
+        nombre_completo: 'Roberto Castillo'
     }
     ],
     categorias:[
     "Novela",
-    "Narrativa de Vanguardia"
+    "Novela Corta"
     ],
     existencias_totales: NumberInt('15'),
     existencias_disponibles: NumberInt('10'),
@@ -834,17 +836,17 @@ db.insertMany([
 },
             {
         codigo_libro: 'LIB0044',
-        titulo:"",
-        anio_publicacion: NumberInt(1938),
+        titulo:"El rostro en el espejo",
+        anio_publicacion: NumberInt(2005),
         autores: [
     {
         codigo_autor: 'AUT0044',
-        nombre_completo: ''
+        nombre_completo: 'Carmen González Huguet'
     }
     ],
     categorias:[
-    "Novela",
-    "Narrativa de Vanguardia"
+    "Novela Corta de Ficcion Gotica",
+    "Narrativa de Posguerra"
     ],
     existencias_totales: NumberInt('15'),
     existencias_disponibles: NumberInt('10'),
@@ -852,17 +854,17 @@ db.insertMany([
 },
             {
         codigo_libro: 'LIB0045',
-        titulo:"",
-        anio_publicacion: NumberInt(1938),
+        titulo:"Soldado en Combate",
+        anio_publicacion: NumberInt(2015),
         autores: [
     {
         codigo_autor: 'AUT0045',
-        nombre_completo: ''
+        nombre_completo: 'Carlos Balmore Fuentes'
     }
     ],
     categorias:[
-    "Novela",
-    "Narrativa de Vanguardia"
+    "Narrativa Testimonial",
+    "Crónica Bélica"
     ],
     existencias_totales: NumberInt('15'),
     existencias_disponibles: NumberInt('10'),
@@ -870,17 +872,17 @@ db.insertMany([
 },
             {
         codigo_libro: 'LIB0046',
-        titulo:"",
-        anio_publicacion: NumberInt(1938),
+        titulo:"El Salvador de 1970 a 1990: politica, economia y socidad ",
+        anio_publicacion: NumberInt(1999),
         autores: [
     {
         codigo_autor: 'AUT0046',
-        nombre_completo: ''
+        nombre_completo: 'Luis Armando Gonzalez'
     }
     ],
     categorias:[
-    "Novela",
-    "Narrativa de Vanguardia"
+    "Ensayo Sociopolítico",
+    "Filosófico"
     ],
     existencias_totales: NumberInt('15'),
     existencias_disponibles: NumberInt('10'),
@@ -888,17 +890,17 @@ db.insertMany([
 },
             {
         codigo_libro: 'LIB0047',
-        titulo:"El libro de las sombras",
-        anio_publicacion: NumberInt(1938),
+        titulo:"La Ultima trinchera",
+        anio_publicacion: NumberInt(1998),
         autores: [
     {
         codigo_autor: 'AUT0047',
-        nombre_completo: ''
+        nombre_completo: 'Marvin Galeas'
     }
     ],
     categorias:[
-    "Novela",
-    "Narrativa de Vanguardia"
+    "Narrativa Testimonial de Posguerra",
+    "Periodisno Narrativo"
     ],
     existencias_totales: NumberInt('15'),
     existencias_disponibles: NumberInt('10'),
@@ -906,17 +908,17 @@ db.insertMany([
 },
             {
         codigo_libro: 'LIB0048',
-        titulo:"",
-        anio_publicacion: NumberInt(1938),
+        titulo:"Taberna y otros lugares",
+        anio_publicacion: NumberInt(1969),
         autores: [
     {
         codigo_autor: 'AUT0048',
-        nombre_completo: ''
+        nombre_completo: 'Roque Dalton'
     }
     ],
     categorias:[
-    "Novela",
-    "Narrativa de Vanguardia"
+    "Lirico",
+    "Poesia Politica y de Collage Intelectual"
     ],
     existencias_totales: NumberInt('15'),
     existencias_disponibles: NumberInt('10'),
@@ -924,17 +926,17 @@ db.insertMany([
 },
             {
         codigo_libro: 'LIB0049',
-        titulo:"",
-        anio_publicacion: NumberInt(1938),
+        titulo:"Estrellas en el Pozo",
+        anio_publicacion: NumberInt(1934),
         autores: [
     {
         codigo_autor: 'AUT0049',
-        nombre_completo: ''
+        nombre_completo: 'Claudia Lars'
     }
     ],
     categorias:[
-    "Novela",
-    "Narrativa de Vanguardia"
+    "Lirico",
+    "Poesia"
     ],
     existencias_totales: NumberInt('15'),
     existencias_disponibles: NumberInt('10'),
@@ -942,17 +944,17 @@ db.insertMany([
 },
             {
         codigo_libro: 'LIB0050',
-        titulo:"",
-        anio_publicacion: NumberInt(1938),
+        titulo:"Jicaras Tristes",
+        anio_publicacion: NumberInt(1932),
         autores: [
     {
         codigo_autor: 'AUT0050',
-        nombre_completo: ''
+        nombre_completo: 'Alfredo Espino'
     }
     ],
     categorias:[
-    "Novela",
-    "Narrativa de Vanguardia"
+    "Poesia bucólica",
+    "Pastoril y Paisajista"
     ],
     existencias_totales: NumberInt('15'),
     existencias_disponibles: NumberInt('10'),
@@ -960,17 +962,17 @@ db.insertMany([
 },
             {
         codigo_libro: 'LIB0051',
-        titulo:"",
-        anio_publicacion: NumberInt(1938),
+        titulo:"Volcán en el tiempo",
+        anio_publicacion: NumberInt(1947),
         autores: [
     {
         codigo_autor: 'AUT0051',
-        nombre_completo: ''
+        nombre_completo: 'Oswaldo Escobar Velado'
     }
     ],
     categorias:[
-    "Novela",
-    "Narrativa de Vanguardia"
+    "Poesia social",
+    "politica y de denuncia"
     ],
     existencias_totales: NumberInt('15'),
     existencias_disponibles: NumberInt('10'),
@@ -978,17 +980,17 @@ db.insertMany([
 },
             {
         codigo_libro: 'LIB0052',
-        titulo:"",
-        anio_publicacion: NumberInt(1938),
+        titulo:"Canciones en el viento",
+        anio_publicacion: NumberInt(1933),
         autores: [
     {
         codigo_autor: 'AUT0052',
-        nombre_completo: ''
+        nombre_completo: 'Pedro Geoffroy Rivas'
     }
     ],
     categorias:[
-    "Novela",
-    "Narrativa de Vanguardia"
+    "Lirica",
+    "Social"
     ],
     existencias_totales: NumberInt('15'),
     existencias_disponibles: NumberInt('10'),
@@ -996,17 +998,17 @@ db.insertMany([
 },
             {
         codigo_libro: 'LIB0053',
-        titulo:"",
-        anio_publicacion: NumberInt(1938),
+        titulo:"Masferrer, alto pensador de Centroamérica",
+        anio_publicacion: NumberInt(1961),
         autores: [
     {
         codigo_autor: 'AUT0053',
-        nombre_completo: ''
+        nombre_completo: 'Matilde Elena Lopez'
     }
     ],
     categorias:[
-    "Novela",
-    "Narrativa de Vanguardia"
+    "Ensayos",
+    "Crítica Literaria"
     ],
     existencias_totales: NumberInt('15'),
     existencias_disponibles: NumberInt('10'),
@@ -1014,17 +1016,16 @@ db.insertMany([
 },
             {
         codigo_libro: 'LIB0054',
-        titulo:"",
-        anio_publicacion: NumberInt(1938),
+        titulo:"El libro de los sonetos",
+        anio_publicacion: NumberInt(1970),
         autores: [
     {
         codigo_autor: 'AUT0054',
-        nombre_completo: ''
+        nombre_completo: 'Roberto Armijo'
     }
     ],
     categorias:[
-    "Novela",
-    "Narrativa de Vanguardia"
+    "Poesia"
     ],
     existencias_totales: NumberInt('15'),
     existencias_disponibles: NumberInt('10'),
@@ -1032,17 +1033,17 @@ db.insertMany([
 },
             {
         codigo_libro: 'LIB0055',
-        titulo:"",
-        anio_publicacion: NumberInt(1938),
+        titulo:"Espacios/Poemas de la herida honda",
+        anio_publicacion: NumberInt(1955),
         autores: [
     {
         codigo_autor: 'AUT0055',
-        nombre_completo: ''
+        nombre_completo: 'Mercedes Durand'
     }
     ],
     categorias:[
-    "Novela",
-    "Narrativa de Vanguardia"
+    "Significado",
+    "Importancia"
     ],
     existencias_totales: NumberInt('15'),
     existencias_disponibles: NumberInt('10'),
@@ -1050,17 +1051,18 @@ db.insertMany([
 },
             {
         codigo_libro: 'LIB0056',
-        titulo:"",
-        anio_publicacion: NumberInt(1938),
+        titulo:"Biografía de la ceniza",
+        anio_publicacion: NumberInt(1959),
         autores: [
     {
         codigo_autor: 'AUT0056',
-        nombre_completo: ''
+        nombre_completo: 'Italo Lopez Vallecillos'
     }
     ],
     categorias:[
-    "Novela",
-    "Narrativa de Vanguardia"
+    "Lirico",
+    "Poesia",
+    "elegiaca  y de compromiso ético"
     ],
     existencias_totales: NumberInt('15'),
     existencias_disponibles: NumberInt('10'),
@@ -1068,17 +1070,18 @@ db.insertMany([
 },
             {
         codigo_libro: 'LIB0057',
-        titulo:"",
-        anio_publicacion: NumberInt(1938),
+        titulo:"Noviembre",
+        anio_publicacion: NumberInt(2015),
         autores: [
     {
         codigo_autor: 'AUT0057',
-        nombre_completo: ''
+        nombre_completo: 'Jorge Galán'
     }
     ],
     categorias:[
-    "Novela",
-    "Narrativa de Vanguardia"
+    "Novela histórica",
+    "Narrativo",
+    "thiller politico-testimonial"
     ],
     existencias_totales: NumberInt('15'),
     existencias_disponibles: NumberInt('10'),
@@ -1086,17 +1089,17 @@ db.insertMany([
 },
             {
         codigo_libro: 'LIB0058',
-        titulo:"",
-        anio_publicacion: NumberInt(1938),
+        titulo:"Voces de la llanura",
+        anio_publicacion: NumberInt(1972),
         autores: [
     {
         codigo_autor: 'AUT0058',
-        nombre_completo: ''
+        nombre_completo: 'Maura Echeverria'
     }
     ],
     categorias:[
-    "Novela",
-    "Narrativa de Vanguardia"
+    "Lirico",
+    "Poesia paisajista"
     ],
     existencias_totales: NumberInt('15'),
     existencias_disponibles: NumberInt('10'),
@@ -1104,17 +1107,18 @@ db.insertMany([
 },
             {
         codigo_libro: 'LIB0059',
-        titulo:"",
-        anio_publicacion: NumberInt(1938),
+        titulo:"La era del llanto",
+        anio_publicacion: NumberInt(2006),
         autores: [
     {
         codigo_autor: 'AUT0059',
-        nombre_completo: ''
+        nombre_completo: 'Krisma Mancia'
     }
     ],
     categorias:[
-    "Novela",
-    "Narrativa de Vanguardia"
+    "Lirica",
+    "Poesia urbana",
+    "realismo sucio"
     ],
     existencias_totales: NumberInt('15'),
     existencias_disponibles: NumberInt('10'),
@@ -1122,17 +1126,19 @@ db.insertMany([
 },
             {
         codigo_libro: 'LIB0060',
-        titulo:"",
-        anio_publicacion: NumberInt(1938),
+        titulo:"El ciervo perseguido",
+        anio_publicacion: NumberInt(2013),
         autores: [
     {
         codigo_autor: 'AUT0060',
-        nombre_completo: ''
+        nombre_completo: 'Luis Alvarengua'
     }
     ],
     categorias:[
-    "Novela",
-    "Narrativa de Vanguardia"
+    "Didáctico",
+    "Ensayo biográfico",
+    "crítica literaria",
+    "monografíca de investigación"
     ],
     existencias_totales: NumberInt('15'),
     existencias_disponibles: NumberInt('10'),
