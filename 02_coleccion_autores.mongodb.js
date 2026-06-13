@@ -390,15 +390,15 @@ db.Autores.insertMany([
     apellido:"Meza",
     nacionalidad:"Salvadoreño",
     fecha_nacimiento:24-03-1980,
-    estado:"Activo",
+    estado:"Activo"
     },
        {
     codigo_autor:AUT0044,
     nombre:"Roberto",
     apellido:"Castillo",
-    nacionalidad:"Salvadoreño,
+    nacionalidad:"Salvadoreño",
     fecha_nacimiento:1950,
-    estado:"Activo",
+    estado:"Activo"
     },
        {
     codigo_autor:AUT0045,
