@@ -69,8 +69,12 @@ db.createCollection("Libros", {
                 }
             }
         }
-    }
-});
+    },
+validationLevel: "strict", 
+validationAction: "error"
+}
+)
+
 
 // Inserción de datos.
 
@@ -91,8 +95,8 @@ db.Libros.insertMany([
     'Novela',
     'Realismo mágico'
   ],
-  existencias_totales: NumberInt('20'),
-  existencias_disponibles: NumberInt('15'),
+  existencias_totales: NumberInt(20),
+  existencias_disponibles: NumberInt(15),
   estado: 'Activo'
     },
     {
@@ -110,8 +114,8 @@ db.Libros.insertMany([
     'Novela',
     'Psicológica'
   ],
-  existencias_totales: NumberInt('10'),
-  existencias_disponibles: NumberInt('5'),
+  existencias_totales: NumberInt(10),
+  existencias_disponibles: NumberInt(5),
   estado: 'Activo'
     },
         {
@@ -129,8 +133,8 @@ db.Libros.insertMany([
     'Novela',
     'Psicológica'
                 ],
-  existencias_totales: NumberInt('10'),
-  existencias_disponibles: NumberInt('5'),
+  existencias_totales: NumberInt(10),
+  existencias_disponibles: NumberInt(5),
   estado: 'Activo'
     },
     {
@@ -148,8 +152,8 @@ db.Libros.insertMany([
     "Novela corta",
     "Romanticismo literario hispanoamericano"
     ],
-  existencias_totales: NumberInt('15'),
-  existencias_disponibles: NumberInt('5'),
+  existencias_totales: NumberInt(15),
+  existencias_disponibles: NumberInt(5),
   estado: 'Activo'
     },
     {
@@ -167,8 +171,8 @@ db.Libros.insertMany([
     "Novela",
     "Realismo mágico"
     ],
-  existencias_totales: NumberInt('20'),
-  existencias_disponibles: NumberInt('10'),
+  existencias_totales: NumberInt(20),
+  existencias_disponibles: NumberInt(10),
     estado: 'Activo'
         },
     {
@@ -187,8 +191,8 @@ db.Libros.insertMany([
     "mito",
     "historia de mexico"
     ],
-  existencias_totales: NumberInt('25'),
-  existencias_disponibles: NumberInt('20'),
+  existencias_totales: NumberInt(25),
+  existencias_disponibles: NumberInt(20),
     estado: 'Activo'
         },
     {
@@ -207,8 +211,8 @@ db.Libros.insertMany([
     "drama",
     "romance"
     ],
-  existencias_totales: NumberInt('30'),
-    existencias_disponibles: NumberInt('25'),
+  existencias_totales: NumberInt(30),
+    existencias_disponibles: NumberInt(25),
     estado: 'Activo'
         },
     {
@@ -226,8 +230,8 @@ db.Libros.insertMany([
     "Ensayo Literario",
     "Historico"
     ],
-  existencias_totales: NumberInt('20'),
-    existencias_disponibles: NumberInt('15'),
+  existencias_totales: NumberInt(20),
+    existencias_disponibles: NumberInt(15),
     estado: 'Activo'
     },
     {
@@ -245,8 +249,8 @@ db.Libros.insertMany([
     "Ensayo Filosofico",
     "Historico"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
     },
     {
@@ -264,8 +268,8 @@ db.Libros.insertMany([
     "Novela",
     "Revolución Mexicana"
     ],
-    existencias_totales: NumberInt('20'),
-    existencias_disponibles: NumberInt('15'),
+    existencias_totales: NumberInt(20),
+    existencias_disponibles: NumberInt(15),
     estado: 'Activo'
     },
     {
@@ -284,8 +288,8 @@ db.Libros.insertMany([
     "Cuentos",
     "Relatos"
     ],
-    existencias_totales: NumberInt('10'),
-    existencias_disponibles: NumberInt('5'),
+    existencias_totales: NumberInt(10),
+    existencias_disponibles: NumberInt(5),
     estado: 'Activo'
     },
     {
@@ -303,8 +307,8 @@ db.Libros.insertMany([
     "Novela",
     "Picaresca"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
     },
     {
@@ -323,8 +327,8 @@ db.Libros.insertMany([
     "Narrativa de Vanguardia",
     "Experimental"
     ],
-    existencias_totales: NumberInt('20'),
-    existencias_disponibles: NumberInt('15'),
+    existencias_totales: NumberInt(20),
+    existencias_disponibles: NumberInt(15),
     estado: 'Activo'
     },
     {
@@ -342,8 +346,8 @@ db.Libros.insertMany([
     "Novela",
     "Novela de la Revolución Mexicana"
     ],
-    existencias_totales: NumberInt('25'),
-    existencias_disponibles: NumberInt('20'),
+    existencias_totales: NumberInt(25),
+    existencias_disponibles: NumberInt(20),
     estado: 'Activo'
     },
     {
@@ -361,8 +365,8 @@ db.Libros.insertMany([
     "Dramatica",
     "Realista"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
     },
     {
@@ -380,8 +384,8 @@ db.Libros.insertMany([
     "Novela politica",
     "Ficcion documental"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
     },
     {
@@ -400,8 +404,8 @@ db.Libros.insertMany([
     "Poesia",
     "Oda"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
     },
     {
@@ -420,8 +424,8 @@ db.Libros.insertMany([
     "Cuentos",
     "Relatos"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
     },
         {
@@ -439,8 +443,8 @@ db.Libros.insertMany([
     "Cronicas literarias",
     "Narrativa"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
     },
         {
@@ -458,8 +462,8 @@ db.Libros.insertMany([
     "Ensayo",
     "Filosofico"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
     },
             {
@@ -477,8 +481,8 @@ db.Libros.insertMany([
     "Novela Picaresca",
     "Narrativa Costumbrista"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
     },
             {
@@ -496,8 +500,8 @@ db.Libros.insertMany([
     "Poesia Lirica Intima",
     "Lirica Conversacional"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
     },
             {
@@ -515,8 +519,8 @@ db.Libros.insertMany([
     "Historico",
     "Mitologica"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
                 {
@@ -536,8 +540,8 @@ db.Libros.insertMany([
     "Lirica",
     "Bucolica"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
             {
@@ -556,8 +560,8 @@ db.Libros.insertMany([
     "Narrativa satírica",
     "Parodia política y de prensa"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
             {
@@ -576,8 +580,8 @@ db.Libros.insertMany([
     "Poesia",
     "Lirica Mistica"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
             {
@@ -595,8 +599,8 @@ db.Libros.insertMany([
     "Estructura Clasica",
     "El Contexto Realista",
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
             {
@@ -615,8 +619,8 @@ db.Libros.insertMany([
     "Prosa Poetica",
     "Narrativa"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
             {
@@ -635,8 +639,8 @@ db.Libros.insertMany([
     "Leyendas",
     "Antologia"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
             {
@@ -655,8 +659,8 @@ db.Libros.insertMany([
     "Ficcion Politica",
     "Critica Social"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
             {
@@ -674,8 +678,8 @@ db.Libros.insertMany([
     "Posmoderna",
     "Experimental y Fragmentaria"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
             {
@@ -693,8 +697,8 @@ db.Libros.insertMany([
     "Polifonica",
     "Novela Testimonial"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
             {
@@ -712,8 +716,8 @@ db.Libros.insertMany([
     "Novela Corta de Corte Psicologico",
     "Thirller Politico de Ficcion"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
             {
@@ -731,8 +735,8 @@ db.Libros.insertMany([
     "Ficcion Historico y Testimonial",
     "Narrativa de denuncia social y Agraria"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
             {
@@ -750,8 +754,8 @@ db.Libros.insertMany([
     "Novela corta de Ficcion Meta-literaria",
     "Narrativa Existencial y Psicologica"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
             {
@@ -769,8 +773,8 @@ db.Libros.insertMany([
     "Teatro del absurdo",
     "drama existencial de la dramatrugia"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
             {
@@ -789,8 +793,8 @@ db.Libros.insertMany([
     "Poesia de Vanguardia",
     "Lirica Existencial y Psicologica"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
             {
@@ -808,8 +812,8 @@ db.Libros.insertMany([
     "Novela de Ficcion Historica",
     "Testimonial"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
             {
@@ -827,8 +831,8 @@ db.Libros.insertMany([
     "Lirico",
     " Poesia de la Generacion de los Ochenta"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
             {
@@ -847,8 +851,8 @@ db.Libros.insertMany([
     "Poesia",
     "Generacion de los Setenta"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
             {
@@ -866,8 +870,8 @@ db.Libros.insertMany([
     "Novela Experimental",
     "Narrativa del Realismo Fantastico y Surrealismo."
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
             {
@@ -885,8 +889,8 @@ db.Libros.insertMany([
     "Diccionario Lexicografico",
     "Linguistico"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
             {
@@ -904,8 +908,8 @@ db.Libros.insertMany([
     "Novela",
     "Novela Corta"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
             {
@@ -923,8 +927,8 @@ db.Libros.insertMany([
     "Novela Corta de Ficcion Gotica",
     "Narrativa de Posguerra"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
             {
@@ -942,8 +946,8 @@ db.Libros.insertMany([
     "Narrativa Testimonial",
     "Crónica Bélica"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
             {
@@ -961,8 +965,8 @@ db.Libros.insertMany([
     "Ensayo Sociopolítico",
     "Filosófico"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
             {
@@ -980,8 +984,8 @@ db.Libros.insertMany([
     "Narrativa Testimonial de Posguerra",
     "Periodisno Narrativo"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
             {
@@ -999,8 +1003,8 @@ db.Libros.insertMany([
     "Lirico",
     "Poesia Politica y de Collage Intelectual"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
             {
@@ -1018,8 +1022,8 @@ db.Libros.insertMany([
     "Lirico",
     "Poesia"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
             {
@@ -1037,8 +1041,8 @@ db.Libros.insertMany([
     "Poesia bucólica",
     "Pastoril y Paisajista"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
             {
@@ -1056,8 +1060,8 @@ db.Libros.insertMany([
     "Poesia social",
     "politica y de denuncia"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
             {
@@ -1075,8 +1079,8 @@ db.Libros.insertMany([
     "Lirica",
     "Social"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
             {
@@ -1094,8 +1098,8 @@ db.Libros.insertMany([
     "Ensayos",
     "Crítica Literaria"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
             {
@@ -1112,8 +1116,8 @@ db.Libros.insertMany([
     categorias:[
     "Poesia"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
             {
@@ -1131,8 +1135,8 @@ db.Libros.insertMany([
     "Significado",
     "Importancia"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
             {
@@ -1151,8 +1155,8 @@ db.Libros.insertMany([
     "Poesia",
     "elegiaca  y de compromiso ético"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
             {
@@ -1171,8 +1175,8 @@ db.Libros.insertMany([
     "Narrativo",
     "thiller politico-testimonial"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
             {
@@ -1190,8 +1194,8 @@ db.Libros.insertMany([
     "Lirico",
     "Poesia paisajista"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
             {
@@ -1210,8 +1214,8 @@ db.Libros.insertMany([
     "Poesia urbana",
     "realismo sucio"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 },
             {
@@ -1231,8 +1235,8 @@ db.Libros.insertMany([
     "crítica literaria",
     "monografíca de investigación"
     ],
-    existencias_totales: NumberInt('15'),
-    existencias_disponibles: NumberInt('10'),
+    existencias_totales: NumberInt(15),
+    existencias_disponibles: NumberInt(10),
     estado: 'Activo'
 }
 

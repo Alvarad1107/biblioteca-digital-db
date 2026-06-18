@@ -37,8 +37,11 @@ db.createCollection("Autores", {
                 }
             }
         }
-    }
-});
+    },
+validationLevel: "strict", 
+validationAction: "error"
+}
+)
 
 // Inserción de datos.
 
