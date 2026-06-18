@@ -65,7 +65,7 @@ db.createCollection("Libros", {
                 editorial: {
                     bsonType: "string",
                     minLength: 1,
-                    maxLength: 100
+                    maxLength: 150
                 }
             }
         }
@@ -914,7 +914,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0044",
         titulo: "El rostro en el espejo",
         anio_publicacion: NumberInt(2005),
-        Editorial: "Rubén H. Dimas",
+        editorial: "Rubén H. Dimas",
         autores: [
             {
                 codigo_autor: "AUT0044",
