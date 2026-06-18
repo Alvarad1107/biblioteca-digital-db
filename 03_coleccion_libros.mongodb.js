@@ -7,7 +7,7 @@ db.createCollection("Libros", {
     validator: {
         $jsonSchema: {
             bsonType: "object",
-            required: ["codigo_libro", "titulo", "anio_publicacion", "autores", "categorias", "existencias_totales", "existencias_disponibles", "estado", "Editorial"],
+            required: ["codigo_libro", "titulo", "anio_publicacion", "autores", "categorias", "existencias_totales", "existencias_disponibles", "estado", "editorial"],
             properties: {
                 codigo_libro: {
                     bsonType: "string",
@@ -62,10 +62,10 @@ db.createCollection("Libros", {
                     minLength: 1,
                     maxLength: 20
                 },
-                Editorial: {
+                editorial: {
                     bsonType: "string",
                     minLength: 1,
-                    maxLength: 60
+                    maxLength: 100
                 }
             }
         }
@@ -408,7 +408,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0018",
         titulo: "Cuentos y Narraciones",
         anio_publicacion: NumberInt(1931),
-
+        Editorial: "Dirección de Publicaciones e Impresos",
         autores: [
             {
                 codigo_autor: "AUT0018",
@@ -1127,7 +1127,7 @@ db.Libros.insertMany([
         autores: [
             {
                 codigo_autor: "AUT0055",
-                nombre_completo: "Mercedes Durand"
+                nombre_completo: "Mercedes Duran"
             }
         ],
         categorias: [

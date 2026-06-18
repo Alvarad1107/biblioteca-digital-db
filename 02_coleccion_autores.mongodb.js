@@ -207,7 +207,7 @@ db.Autores.insertMany([
   {
     codigo_autor: "AUT0021",
     nombre: "Alberto",
-    apellido: "Masferrer",
+    apellido: "Rivas Bonilla",
     nacionalidad: "Salvadoreño",
     fecha_nacimiento: new Date("1891-09-04"),
     estado: "Activo",
@@ -521,7 +521,7 @@ db.Autores.insertMany([
     nombre: "Luis",
     apellido: "Alvarengua",
     nacionalidad: "Salvadoreño",
-    fecha_nacimiento: new Date(""),
+    fecha_nacimiento: new Date("1940-01-01"),
     estado: "Activo",
   },
 ]);
