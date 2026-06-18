@@ -238,22 +238,14 @@ db.Autores.insertMany([
   },
   {
     codigo_autor: "AUT0025",
-    nombre: "Ricardo",
-    apellido: "Triagueros de León",
-    nacionalidad: "Salvadoreño",
-    fecha_nacimiento: new Date("1917-11-13"),
-    estado: "Activo",
-  },
-  {
-    codigo_autor: "AUT0026",
     nombre: "Jose Maria",
     apellido: "Peralta Lagos",
-    nacionalidad: "Salvadoreño",
+    nacionalidad: "Salvadoreña",
     fecha_nacimiento: new Date("1873-07-25"),
     estado: "Activo",
   },
   {
-    codigo_autor: "AUT0027",
+    codigo_autor: "AUT0026",
     nombre: "Vicente",
     apellido: "Rosales y Rosales",
     nacionalidad: "Salvadoreño",
@@ -261,7 +253,7 @@ db.Autores.insertMany([
     estado: "Activo",
   },
   {
-    codigo_autor: "AUT0028",
+    codigo_autor: "AUT0027",
     nombre: "Juan José",
     apellido: "Cañas",
     nacionalidad: "Salvadoreño",
@@ -269,7 +261,7 @@ db.Autores.insertMany([
     estado: "Activo",
   },
   {
-    codigo_autor: "AUT0029",
+    codigo_autor: "AUT0028",
     nombre: "Salvador",
     apellido: "Salazar Arrué",
     nacionalidad: "Salvadoreño",
@@ -277,7 +269,7 @@ db.Autores.insertMany([
     estado: "Activo",
   },
   {
-    codigo_autor: "AUT0030",
+    codigo_autor: "AUT0029",
     nombre: "Miguel Ángel",
     apellido: "Espino",
     nacionalidad: "Salvadoreño",
@@ -285,7 +277,7 @@ db.Autores.insertMany([
     estado: "Activo",
   },
   {
-    codigo_autor: "AUT0031",
+    codigo_autor: "AUT0030",
     nombre: "Horacio",
     apellido: "Castellanos Moya",
     nacionalidad: "Salvadoreño",
@@ -293,7 +285,7 @@ db.Autores.insertMany([
     estado: "Activo",
   },
   {
-    codigo_autor: "AUT0032",
+    codigo_autor: "AUT0031",
     nombre: "Jacinta",
     apellido: "Escudos",
     nacionalidad: "Salvadoreña",
@@ -301,7 +293,7 @@ db.Autores.insertMany([
     estado: "Activo",
   },
   {
-    codigo_autor: "AUT0033",
+    codigo_autor: "AUT0032",
     nombre: "Manlio",
     apellido: "Argueta",
     nacionalidad: "Salvadoreño",
@@ -309,7 +301,7 @@ db.Autores.insertMany([
     estado: "Activo",
   },
   {
-    codigo_autor: "AUT0034",
+    codigo_autor: "AUT0033",
     nombre: "David",
     apellido: "Escobar Galindo",
     nacionalidad: "Salvadoreño",
@@ -317,7 +309,7 @@ db.Autores.insertMany([
     estado: "Activo",
   },
   {
-    codigo_autor: "AUT0035",
+    codigo_autor: "AUT0034",
     nombre: "José",
     apellido: "Rutilio Quezada",
     nacionalidad: "Salvadoreño",
@@ -325,7 +317,7 @@ db.Autores.insertMany([
     estado: "Activo",
   },
   {
-    codigo_autor: "AUT0036",
+    codigo_autor: "AUT0035",
     nombre: "Carlos",
     apellido: "Anchetta",
     nacionalidad: "Salvadoreño",
@@ -333,7 +325,7 @@ db.Autores.insertMany([
     estado: "Activo",
   },
   {
-    codigo_autor: "AUT0037",
+    codigo_autor: "AUT0036",
     nombre: "Alvaro",
     apellido: "Menen Desleal",
     nacionalidad: "Salvadoreño",
@@ -341,7 +333,7 @@ db.Autores.insertMany([
     estado: "Activo",
   },
   {
-    codigo_autor: "AUT0038",
+    codigo_autor: "AUT0037",
     nombre: "Alfonso",
     apellido: "Quijada Urías",
     nacionalidad: "Salvadoreño",
@@ -349,7 +341,7 @@ db.Autores.insertMany([
     estado: "Activo",
   },
   {
-    codigo_autor: "AUT0039",
+    codigo_autor: "AUT0038",
     nombre: "Mario",
     apellido: "Bencastro",
     nacionalidad: "Salvadoreño",
@@ -357,7 +349,7 @@ db.Autores.insertMany([
     estado: "Activo",
   },
   {
-    codigo_autor: "AUT0040",
+    codigo_autor: "AUT0039",
     nombre: "Alvaro",
     apellido: "Dario Lara",
     nacionalidad: "Salvadoreño",
@@ -365,7 +357,7 @@ db.Autores.insertMany([
     estado: "Activo",
   },
   {
-    codigo_autor: "AUT0041",
+    codigo_autor: "AUT0040",
     nombre: "Rafael",
     apellido: "Mendoza",
     nacionalidad: "Salvadoreño",
@@ -373,7 +365,7 @@ db.Autores.insertMany([
     estado: "Activo",
   },
   {
-    codigo_autor: "AUT0042",
+    codigo_autor: "AUT0041",
     nombre: "Ricardo",
     apellido: "Lindo",
     nacionalidad: "Salvadoreño",
@@ -381,15 +373,15 @@ db.Autores.insertMany([
     estado: "Activo",
   },
   {
-    codigo_autor: "AUT0043",
+    codigo_autor: "AUT0042",
     nombre: "Joaquín",
     apellido: "Meza",
     nacionalidad: "Salvadoreño",
     fecha_nacimiento: new Date("1980-03-24"),
-    estado: "Activo"
+    estado: "Activo",
   },
   {
-    codigo_autor: "AUT0044",
+    codigo_autor: "AUT0043",
     nombre: "Roberto",
     apellido: "Castillo",
     nacionalidad: "Salvadoreño",
@@ -397,15 +389,15 @@ db.Autores.insertMany([
     estado: "Activo"
   },
   {
-    codigo_autor: "AUT0045",
+    codigo_autor: "AUT0044",
     nombre: "Carmen",
     apellido: "González Huguet",
-    nacionalidad: "Salvadoreño",
+    nacionalidad: "Salvadoreña",
     fecha_nacimiento: new Date("1958-11-15"),
-    estado: "Activo",
+    estado: "Activo"
   },
   {
-    codigo_autor: "AUT0046",
+    codigo_autor: "AUT0045",
     nombre: "Carlos",
     apellido: "Balmore Fuentes",
     nacionalidad: "Salvadoreño",
@@ -413,7 +405,7 @@ db.Autores.insertMany([
     estado: "Activo",
   },
   {
-    codigo_autor: "AUT0047",
+    codigo_autor: "AUT0046",
     nombre: "Luis Armando",
     apellido: "González",
     nacionalidad: "Salvadoreño",
@@ -421,7 +413,7 @@ db.Autores.insertMany([
     estado: "Activo",
   },
   {
-    codigo_autor: "AUT0048",
+    codigo_autor: "AUT0047",
     nombre: "Marvin",
     apellido: "Galeas",
     nacionalidad: "Salvadoreño",
@@ -429,7 +421,7 @@ db.Autores.insertMany([
     estado: "Activo",
   },
   {
-    codigo_autor: "AUT0049",
+    codigo_autor: "AUT0048",
     nombre: "Roque",
     apellido: "Dalton",
     nacionalidad: "Salvadoreño",
@@ -437,7 +429,7 @@ db.Autores.insertMany([
     estado: "Activo",
   },
   {
-    codigo_autor: "AUT0050",
+    codigo_autor: "AUT0049",
     nombre: "Claudia",
     apellido: "Lars",
     nacionalidad: "Salvadoreña",
@@ -445,7 +437,7 @@ db.Autores.insertMany([
     estado: "Activo",
   },
   {
-    codigo_autor: "AUT0051",
+    codigo_autor: "AUT0050",
     nombre: "Alfredo",
     apellido: "Espino",
     nacionalidad: "Salvadoreño",
@@ -453,7 +445,7 @@ db.Autores.insertMany([
     estado: "Activo",
   },
   {
-    codigo_autor: "AUT0052",
+    codigo_autor: "AUT0051",
     nombre: "Oswaldo",
     apellido: "Escobar Velado",
     nacionalidad: "Salvadoreño",
@@ -461,7 +453,7 @@ db.Autores.insertMany([
     estado: "Activo",
   },
   {
-    codigo_autor: "AUT0053",
+    codigo_autor: "AUT0052",
     nombre: "Pedro",
     apellido: "Geoffroy Rivas",
     nacionalidad: "Salvadoreño",
@@ -469,7 +461,7 @@ db.Autores.insertMany([
     estado: "Activo",
   },
   {
-    codigo_autor: "AUT0054",
+    codigo_autor: "AUT0053",
     nombre: "Matilde Elena",
     apellido: "López",
     nacionalidad: "Salvadoreña",
@@ -477,7 +469,7 @@ db.Autores.insertMany([
     estado: "Activo",
   },
   {
-    codigo_autor: "AUT0055",
+    codigo_autor: "AUT0054",
     nombre: "Roberto",
     apellido: "Armijo",
     nacionalidad: "Salvadoreño",
@@ -485,7 +477,7 @@ db.Autores.insertMany([
     estado: "Activo",
   },
   {
-    codigo_autor: "AUT0056",
+    codigo_autor: "AUT0055",
     nombre: "Mercedes",
     apellido: "Duran",
     nacionalidad: "Salvadoreña",
@@ -493,7 +485,7 @@ db.Autores.insertMany([
     estado: "Activo",
   },
   {
-    codigo_autor: "AUT0057",
+    codigo_autor: "AUT0056",
     nombre: "Italo",
     apellido: "López Vallecillos",
     nacionalidad: "Salvadoreño",
@@ -501,7 +493,7 @@ db.Autores.insertMany([
     estado: "Activo",
   },
   {
-    codigo_autor: "AUT0058",
+    codigo_autor: "AUT0057",
     nombre: "Jorge",
     apellido: "Galan",
     nacionalidad: "Salvadoreño",
@@ -509,7 +501,7 @@ db.Autores.insertMany([
     estado: "Activo",
   },
   {
-    codigo_autor: "AUT0059",
+    codigo_autor: "AUT0058",
     nombre: "Maura",
     apellido: "Echeverría",
     nacionalidad: "Salvadoreña",
@@ -517,11 +509,19 @@ db.Autores.insertMany([
     estado: "Activo",
   },
   {
-    codigo_autor: "AUT0060",
+    codigo_autor: "AUT0059",
     nombre: "Krisma",
     apellido: "Mancia",
     nacionalidad: "Salvadoreña",
     fecha_nacimiento: new Date("1980-02-13"),
+    estado: "Activo",
+  },
+  {
+    codigo_autor: "AUT0060",
+    nombre: "Luis",
+    apellido: "Alvarengua",
+    nacionalidad: "Salvadoreño",
+    fecha_nacimiento: new Date(""),
     estado: "Activo",
   },
 ]);
