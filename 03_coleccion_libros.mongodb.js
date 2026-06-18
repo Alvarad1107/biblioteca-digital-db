@@ -136,7 +136,8 @@ db.Libros.insertMany([
     {
         codigo_libro: 'LIB0004',
         titulo:"Antonia",
-        anio_publicacion: NumberInt(1871,1873),
+        anio_publicacion: NumberInt(1871),
+        editorial: "Imprenta del Estado",
         autores: [
     {
         codigo_autor: 'AUT0004',
@@ -372,7 +373,7 @@ db.Libros.insertMany([
         autores: [
     {
         codigo_autor: 'AUT0016',
-        nombre_completo: 'Manou Dornbierer'
+        nombre_completo: 'Luis Spota'
     }
     ],
     categorias:[
@@ -407,7 +408,7 @@ db.Libros.insertMany([
         codigo_libro: 'LIB0018',
         titulo:"Cuentos y Narraciones",
         anio_publicacion: NumberInt(1931),
-        Editorial: "Dirección de Publicaciones e Impresos",
+        editorial: "Dirección de Publicaciones e Impresos",
         autores: [
     {
         codigo_autor: 'AUT0018',
@@ -871,7 +872,7 @@ db.Libros.insertMany([
 },
             {
         codigo_libro: 'LIB0042',
-        titulo:"Real Diccionario de al Vigar Lengua Guanaca",
+        titulo:"Real Diccionario de la Lengua Guanaca",
         anio_publicacion: NumberInt(2009),
         editorial: "Ediciones Salvador Juárez",
         autores: [

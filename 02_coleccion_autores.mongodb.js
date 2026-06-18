@@ -524,4 +524,5 @@ db.Autores.insertMany([
     fecha_nacimiento: new Date("1940-01-01"),
     estado: "Activo",
   },
-]);
+]
+)
