@@ -79,7 +79,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0001",
         titulo: "Agua para chocolate",
         anio_publicacion: NumberInt(1989),
-                Editorial: "Penguin Random House",
+                editorial: "Penguin Random House",
 
         autores: [
             {
@@ -99,7 +99,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0002",
         titulo: "Adios Job",
         anio_publicacion: NumberInt(1961),
-            Editorial: "Fondo de Cultura Económica",
+            editorial: "Fondo de Cultura Económica",
         autores: [
             {
                 codigo_autor: "AUT0002",
@@ -118,7 +118,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0003",
         titulo: "Al filo del agua",
         anio_publicacion: NumberInt(1947),
-        Editorial: "Fondo de Cultura Económica",
+        editorial: "Fondo de Cultura Económica",
         autores: [
             {
                 codigo_autor: "AUT0003",
@@ -137,7 +137,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0004",
         titulo: "Antonia",
         anio_publicacion: NumberInt(1871),
-        Editorial: "publicaciones periódicas",
+        editorial: "publicaciones periódicas",
         autores: [
             {
                 codigo_autor: "AUT0004",
@@ -156,7 +156,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0005",
         titulo: "Heart of Aztlán (Corazón de Aztlán)",
         anio_publicacion: NumberInt(1976),
-        Editorial: "Editorial Justa Publications",
+        editorial: "Editorial Justa Publications",
         autores: [
             {
                 codigo_autor: "AUT0005",
@@ -175,7 +175,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0006",
         titulo: "La región más transparente",
         anio_publicacion: NumberInt(1958),
-        Editorial: "Fondo de Cultura Económica",
+        editorial: "Fondo de Cultura Económica",
         autores: [
             {
                 codigo_autor: "AUT0006",
@@ -195,7 +195,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0007",
         titulo: "Juventud en éxtasis",
         anio_publicacion: NumberInt(1994),
-        Editorial: "Ediciones Selectas Diamante",
+        editorial: "Ediciones Selectas Diamante",
         autores: [
             {
                 codigo_autor: "AUT0007",
@@ -215,7 +215,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0008",
         titulo: "Soy de aquí y soy de allá",
         anio_publicacion: NumberInt(1994),
-        Editorial: "Fondo de Cultura Económica",
+        editorial: "Fondo de Cultura Económica",
         autores: [
             {
                 codigo_autor: "AUT0008",
@@ -234,7 +234,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0009",
         titulo: "el amor y la amistad en el mexico",
         anio_publicacion: NumberInt(1952),
-        Editorial: "Editorial Porrúa",
+        editorial: "Editorial Porrúa",
         autores: [
             {
                 codigo_autor: "AUT0009",
@@ -253,7 +253,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0010",
         titulo: "El águila y la serpiente",
         anio_publicacion: NumberInt(1928),
-        Editorial: "Editorial Aguilar",
+        editorial: "Editorial Aguilar",
         autores: [
             {
                 codigo_autor: "AUT0010",
@@ -272,7 +272,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0011",
         titulo: "Leyendas Mexianas",
         anio_publicacion: NumberInt(1943),
-        Editorial: "Editorial Selector",
+        editorial: "Editorial Selector",
         autores: [
             {
                 codigo_autor: "AUT0011",
@@ -292,7 +292,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0012",
         titulo: "El Periquillo Sarniento",
         anio_publicacion: NumberInt(1816),
-        Editorial: "Editorial Porrúa",
+        editorial: "Editorial Porrúa",
         autores: [
             {
                 codigo_autor: "AUT0012",
@@ -311,7 +311,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0013",
         titulo: "Voz adolorida",
         anio_publicacion: NumberInt(1961),
-        Editorial: "Universidad Veracruzana",
+        editorial: "Universidad Veracruzana",
         autores: [
             {
                 codigo_autor: "AUT0013",
@@ -331,7 +331,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0014",
         titulo: "Los de abajo",
         anio_publicacion: NumberInt(1915),
-        Editorial: "El Paso del Norte",
+        editorial: "El Paso del Norte",
         autores: [
             {
                 codigo_autor: "AUT0014",
@@ -350,7 +350,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0015",
         titulo: "Matacandela",
         anio_publicacion: NumberInt(1987),
-        Editorial: "Editorial Grijalbo",
+        editorial: "Editorial Grijalbo",
         autores: [
             {
                 codigo_autor: "AUT0015",
@@ -369,7 +369,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0016",
         titulo: "Retrato hablado",
         anio_publicacion: NumberInt(1976),
-        Editorial: "Grijalbo",
+        editorial: "Grijalbo",
         autores: [
             {
                 codigo_autor: "AUT0016",
@@ -388,7 +388,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0017",
         titulo: "Oda al Ciudadano General Francisco Morazan",
         anio_publicacion: NumberInt(1842),
-        Editorial: "Secretaría de las Culturas",
+        editorial: "Secretaría de las Culturas",
         autores: [
             {
                 codigo_autor: "AUT0017",
@@ -428,7 +428,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0019",
         titulo: "El libro del trópico",
         anio_publicacion: NumberInt(1907),
-        Editorial: "Dirección de Publicaciones e Impresos",
+        editorial: "Dirección de Publicaciones e Impresos",
         autores: [
             {
                 codigo_autor: "AUT0019",
@@ -447,7 +447,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0020",
         titulo: "Las siete cuerdas de la lira",
         anio_publicacion: NumberInt(1926),
-        Editorial:"Orientación",
+        editorial:"Orientación",
         autores: [
             {
                 codigo_autor: "AUT0020",
@@ -466,7 +466,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0021",
         titulo: "Andanzas y Malandanzas",
         anio_publicacion: NumberInt(1936),
-        Editorial:"Editorial Jurídica Salvadoreña",
+        editorial:"Editorial Jurídica Salvadoreña",
         autores: [
             {
                 codigo_autor: "AUT0021",
@@ -485,7 +485,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0022",
         titulo: "Corason con S",
         anio_publicacion: NumberInt(1941),
-        Editorial:"Consejo Nacional para la Cultura y el Arte",
+        editorial:"Consejo Nacional para la Cultura y el Arte",
         autores: [
             {
                 codigo_autor: "AUT0022",
@@ -504,7 +504,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0023",
         titulo: "Armonías íntimas",
         anio_publicacion: NumberInt(1919),
-        Editorial:"Tipografía La Unión en San Salvador",
+        editorial:"Tipografía La Unión en San Salvador",
         autores: [
             {
                 codigo_autor: "AUT0023",
@@ -524,7 +524,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0024",
         titulo: "Campanario",
         anio_publicacion: NumberInt(1941),
-        Editorial: "Biblioteca Nacional de El Salvador",
+        editorial: "Biblioteca Nacional de El Salvador",
         autores: [
             {
                 codigo_autor: "AUT0024",
@@ -545,7 +545,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0025",
         titulo: "La Muerte de la Tortola",
         anio_publicacion: NumberInt(1932),
-        Editorial: "Funes & Ungo",
+        editorial: "Funes & Ungo",
         autores: [
             {
                 codigo_autor: "AUT0025",
@@ -565,7 +565,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0026",
         titulo: "Pacuas de oro",
         anio_publicacion: NumberInt(1947),
-        Editorial: "Departamento Editorial del Ministerio de Cultura de El Salvado",
+        editorial: "Departamento Editorial del Ministerio de Cultura de El Salvado",
         autores: [
             {
                 codigo_autor: "AUT0026",
@@ -585,7 +585,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0027",
         titulo: "A la Salida del vapor",
         anio_publicacion: NumberInt(1850),
-        Editorial: "no tiene una editorial propia",
+        editorial: "no tiene una editorial propia",
         autores: [
             {
                 codigo_autor: "AUT0027",
@@ -604,7 +604,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0028",
         titulo: "Cuentos de barro",
         anio_publicacion: NumberInt(1933),
-        Editorial: "La Montaña",
+        editorial: "La Montaña",
         autores: [
             {
                 codigo_autor: "AUT0028",
@@ -624,7 +624,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0029",
         titulo: "Mitologia de Cuscatlan",
         anio_publicacion: NumberInt(1919),
-        Editorial: "Imprenta Nacional",
+        editorial: "Imprenta Nacional",
         autores: [
             {
                 codigo_autor: "AUT0029",
@@ -644,7 +644,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0030",
         titulo: "El Asco",
         anio_publicacion: NumberInt(1997),
-        Editorial: "Dirección de Publicaciones e Impresos",
+        editorial: "Dirección de Publicaciones e Impresos",
         autores: [
             {
                 codigo_autor: "AUT0030",
@@ -664,7 +664,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0031",
         titulo: "A-B-Sudario",
         anio_publicacion: NumberInt(2023),
-        Editorial: "Editorial Santillana",
+        editorial: "Editorial Santillana",
         autores: [
             {
                 codigo_autor: "AUT0031",
@@ -683,7 +683,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0032",
         titulo: "Un dia en la vida",
         anio_publicacion: NumberInt(1980),
-        Editorial: "Editorial Universitaria Centroamericana",
+        editorial: "Editorial Universitaria Centroamericana",
         autores: [
             {
                 codigo_autor: "AUT0032",
@@ -702,7 +702,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0033",
         titulo: "Una grieta en el agua",
         anio_publicacion: NumberInt(1972),
-        Editorial: "Editorial Clásicos Roxsil",
+        editorial: "Editorial Clásicos Roxsil",
         autores: [
             {
                 codigo_autor: "AUT0033",
@@ -721,7 +721,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0034",
         titulo: "Dolor de Patria",
         anio_publicacion: NumberInt(1984),
-        Editorial: "Clásicos Roxsil",
+        editorial: "Clásicos Roxsil",
         autores: [
             {
                 codigo_autor: "AUT0034",
@@ -740,7 +740,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0035",
         titulo: "Los Cisnes",
         anio_publicacion: NumberInt(2013),
-        Editorial: "Editorial Flor de Barro",
+        editorial: "Editorial Flor de Barro",
         autores: [
             {
                 codigo_autor: "AUT0035",
@@ -759,7 +759,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0036",
         titulo: "Luz negra",
         anio_publicacion: NumberInt(1962),
-        Editorial: "Ministerio de Cultura (Departamento Editorial)",
+        editorial: "Ministerio de Cultura (Departamento Editorial)",
         autores: [
             {
                 codigo_autor: "AUT0036",
@@ -778,7 +778,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0037",
         titulo: "Poemas",
         anio_publicacion: NumberInt(1967),
-        Editorial: "Dirección de Publicaciones e Impresos",       
+        editorial: "Dirección de Publicaciones e Impresos",       
         autores: [
             {
                 codigo_autor: "AUT0037",
@@ -798,7 +798,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0038",
         titulo: "Disparo en la catedral",
         anio_publicacion: NumberInt(1984),
-        Editorial: "Editorial Diana",
+        editorial: "Editorial Diana",
         autores: [
             {
                 codigo_autor: "AUT0038",
@@ -817,7 +817,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0039",
         titulo: "Vitrales",
         anio_publicacion: NumberInt(1987),
-        Editorial: "Editorial Abril Uno",
+        editorial: "Editorial Abril Uno",
         autores: [
             {
                 codigo_autor: "AUT0039",
@@ -836,7 +836,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0040",
         titulo: "Confesiones a Marcia",
         anio_publicacion: NumberInt(1970),
-        Editorial: "Universidad de El Salvador",
+        editorial: "Universidad de El Salvador",
         autores: [
             {
                 codigo_autor: "AUT0040",
@@ -856,7 +856,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0041",
         titulo: "Equis o la pequeña historia de gran amor",
         anio_publicacion: NumberInt(1976),
-        Editorial: "Dirección de Publicaciones de El Salvador",
+        editorial: "Dirección de Publicaciones de El Salvador",
         autores: [
             {
                 codigo_autor: "AUT0041",
@@ -875,7 +875,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0042",
         titulo: "Real Diccionario de al Vigar Lengua Guanaca",
         anio_publicacion: NumberInt(2009),
-        Editorial: "Ediciones Salvador Juárez",
+        editorial: "Ediciones Salvador Juárez",
         autores: [
             {
                 codigo_autor: "AUT0042",
@@ -895,7 +895,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0043",
         titulo: "El Corneta",
         anio_publicacion: NumberInt(1981),
-        Editorial: "Editorial Guaymuras",
+        editorial: "Editorial Guaymuras",
         autores: [
             {
                 codigo_autor: "AUT0043",
@@ -933,7 +933,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0045",
         titulo: "Soldado en Combate",
         anio_publicacion: NumberInt(2015),
-        Editorial: "Comando de Doctrina y Educación Militar",
+        editorial: "Comando de Doctrina y Educación Militar",
         autores: [
             {
                 codigo_autor: "AUT0045",
@@ -952,7 +952,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0046",
         titulo: "El Salvador de 1970 a 1990: politica, economia y socidad",
         anio_publicacion: NumberInt(1999),
-        Editorial: "Revista de Ciencias Sociales y Humanidades",
+        editorial: "Revista de Ciencias Sociales y Humanidades",
         autores: [
             {
                 codigo_autor: "AUT0046",
@@ -971,7 +971,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0047",
         titulo: "La Ultima trinchera",
         anio_publicacion: NumberInt(1998),
-        Editorial: "Índole Editores",
+        editorial: "Índole Editores",
         autores: [
             {
                 codigo_autor: "AUT0047",
@@ -990,7 +990,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0048",
         titulo: "Taberna y otros lugares",
         anio_publicacion: NumberInt(1969),
-        Editorial: "Casa de las Américas",
+        editorial: "Casa de las Américas",
         autores: [
             {
                 codigo_autor: "AUT0048",
@@ -1009,7 +1009,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0049",
         titulo: "Estrellas en el Pozo",
         anio_publicacion: NumberInt(1934),
-        Editorial: "Ediciones Convivio",
+        editorial: "Ediciones Convivio",
         autores: [
             {
                 codigo_autor: "AUT0049",
@@ -1028,7 +1028,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0050",
         titulo: "Jicaras Tristes",
         anio_publicacion: NumberInt(1932),
-        Editorial: "Universidad de El Salvador",
+        editorial: "Universidad de El Salvador",
         autores: [
             {
                 codigo_autor: "AUT0050",
@@ -1047,7 +1047,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0051",
         titulo: "Volcán en el tiempo",
         anio_publicacion: NumberInt(1947),
-        Editorial: "Imprenta Nacional",
+        editorial: "Imprenta Nacional",
         autores: [
             {
                 codigo_autor: "AUT0051",
@@ -1066,7 +1066,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0052",
         titulo: "Canciones en el viento",
         anio_publicacion: NumberInt(1933),
-        Editorial: "editorial no identificada",
+        editorial: "editorial no identificada",
         autores: [
             {
                 codigo_autor: "AUT0052",
@@ -1085,7 +1085,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0053",
         titulo: "Masferrer, alto pensador de Centroamérica",
         anio_publicacion: NumberInt(1961),
-        Editorial: "Editorial del Ministerio de Educación Pública de Guatemala",
+        editorial: "Editorial del Ministerio de Educación Pública de Guatemala",
         autores: [
             {
                 codigo_autor: "AUT0053",
@@ -1105,7 +1105,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0054",
         titulo: "El libro de los sonetos",
         anio_publicacion: NumberInt(1970),
-        Editorial: "Universidad Tecnológica de El Salvador",
+        editorial: "Universidad Tecnológica de El Salvador",
         autores: [
             {
                 codigo_autor: "AUT0054",
@@ -1123,7 +1123,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0055",
         titulo: "Espacios",
         anio_publicacion: NumberInt(1955),
-        Editorial: "casa de Arreola",
+        editorial: "casa de Arreola",
         autores: [
             {
                 codigo_autor: "AUT0055",
@@ -1142,7 +1142,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0056",
         titulo: "Biografía de la ceniza",
         anio_publicacion: NumberInt(1959),
-        Editorial: "Dirección de Publicaciones e Impresos",
+        editorial: "Dirección de Publicaciones e Impresos",
         autores: [
             {
                 codigo_autor: "AUT0056",
@@ -1162,7 +1162,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0057",
         titulo: "Noviembre",
         anio_publicacion: NumberInt(2015),
-        Editorial: "Tusquets Editores",
+        editorial: "Tusquets Editores",
         autores: [
             {
                 codigo_autor: "AUT0057",
@@ -1182,7 +1182,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0058",
         titulo: "Voces de la llanura",
         anio_publicacion: NumberInt(1972),
-        Editorial: "Dirección de Publicaciones e Impresos",
+        editorial: "Dirección de Publicaciones e Impresos",
         autores: [
             {
                 codigo_autor: "AUT0058",
@@ -1201,7 +1201,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0059",
         titulo: "La era del llanto",
         anio_publicacion: NumberInt(2006),
-        Editorial: "Dirección de Publicaciones e Impresos",
+        editorial: "Dirección de Publicaciones e Impresos",
         autores: [
             {
                 codigo_autor: "AUT0059",
@@ -1223,7 +1223,7 @@ db.Libros.insertMany([
         codigo_libro: "LIB0060",
         titulo: "El ciervo perseguido",
         anio_publicacion: NumberInt(2013),
-        Editorial: "Dirección de Publicaciones e Impresos",
+        editorial: "Dirección de Publicaciones e Impresos",
         autores: [
             {
                 codigo_autor: "AUT0060",
