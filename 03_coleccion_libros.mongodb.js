@@ -508,6 +508,7 @@ db.Libros.insertMany([
         codigo_libro: 'LIB0023',
         titulo:"La Princesa Citala",
         anio_publicacion: NumberInt(1946),
+        editorial: "Editorial Independiente",
         autores: [
     {
         codigo_autor: 'AUT0023',
@@ -1242,5 +1243,3 @@ db.Libros.insertMany([
 
 ]
 )
-
-
