@@ -26,7 +26,7 @@ db.createCollection("prestamos", {
         },
         codigo_libro: {
           bsonType: "string",
-          pattern: "^LIB-[0-9]{4,5}$", 
+          pattern: "^LIB[0-9]{4}$", 
           description: "Referencia al código del libro prestado (obligatorio)"
         },
         fechas: {
@@ -55,14 +55,16 @@ db.createCollection("prestamos", {
         }
       }
     }
-  }
+  },
+  validationLevel: "strict",
+  validationAction: "error"
 });
 
 // Inserción de datos.
 db.prestamos.insertMany([
   {
     codigo_prestamo: "PR-5001",
-    codigo_libro: "LIB-0001",
+    codigo_libro: "LIB0001",
     codigo_usuario: "USR-SUP-001",
     fechas: {
       fecha_salida: new Date("2026-05-20T00:00:00Z"),
@@ -72,7 +74,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5002",
-    codigo_libro: "LIB-0002",
+    codigo_libro: "LIB0002",
     codigo_usuario: "USR-SUP-001",
     fechas: {
       fecha_salida: new Date("2026-05-10T00:00:00Z"),
@@ -83,7 +85,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5003",
-    codigo_libro: "LIB-0004",
+    codigo_libro: "LIB0004",
     codigo_usuario: "USR-BIB-001",
     fechas: {
       fecha_salida: new Date("2026-05-10T00:00:00Z"),
@@ -93,7 +95,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5004",
-    codigo_libro: "LIB-00016",
+    codigo_libro: "LIB0016",
     codigo_usuario: "USR-BIB-003",
     fechas: {
       fecha_salida: new Date("2026-05-10T00:00:00Z"),
@@ -103,7 +105,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5005",
-    codigo_libro: "LIB-0008",
+    codigo_libro: "LIB0008",
     codigo_usuario: "USR-BIB-002",
     fechas: {
       fecha_salida: new Date("2026-05-01T00:00:00Z"),
@@ -114,7 +116,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5006",
-    codigo_libro: "LIB-0009",
+    codigo_libro: "LIB0009",
     codigo_usuario: "USR-BIB-002",
     fechas: {
       fecha_salida: new Date("2026-05-02T00:00:00Z"),
@@ -124,7 +126,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5007",
-    codigo_libro: "LIB-00010",
+    codigo_libro: "LIB0010",
     codigo_usuario: "USR-BIB-001",
     fechas: {
       fecha_salida: new Date("2026-05-03T00:00:00Z"),
@@ -134,7 +136,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5008",
-    codigo_libro: "LIB-00011",
+    codigo_libro: "LIB0011",
     codigo_usuario: "USR-BIB-002",
     fechas: {
       fecha_salida: new Date("2026-05-04T00:00:00Z"),
@@ -145,7 +147,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5009",
-    codigo_libro: "LIB-00012",
+    codigo_libro: "LIB0012",
     codigo_usuario: "USR-BIB-003",
     fechas: {
       fecha_salida: new Date("2026-05-05T00:00:00Z"),
@@ -155,7 +157,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5010",
-    codigo_libro: "LIB-00013",
+    codigo_libro: "LIB0013",
     codigo_usuario: "USR-BIB-002",
     fechas: {
       fecha_salida: new Date("2026-05-06T00:00:00Z"),
@@ -165,7 +167,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5011",
-    codigo_libro: "LIB-00014",
+    codigo_libro: "LIB0014",
     codigo_usuario: "USR-BIB-001",
     fechas: {
       fecha_salida: new Date("2026-05-07T00:00:00Z"),
@@ -176,7 +178,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5012",
-    codigo_libro: "LIB-00015",
+    codigo_libro: "LIB0015",
     codigo_usuario: "USR-BIB-002",
     fechas: {
       fecha_salida: new Date("2026-05-08T00:00:00Z"),
@@ -186,7 +188,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5013",
-    codigo_libro: "LIB-00016",
+    codigo_libro: "LIB0016",
     codigo_usuario: "USR-BIB-003",
     fechas: {
       fecha_salida: new Date("2026-05-09T00:00:00Z"),
@@ -196,7 +198,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5014",
-    codigo_libro: "LIB-00017",
+    codigo_libro: "LIB0017",
     codigo_usuario: "USR-BIB-002",
     fechas: {
       fecha_salida: new Date("2026-05-10T00:00:00Z"),
@@ -207,7 +209,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5015",
-    codigo_libro: "LIB-00018",
+    codigo_libro: "LIB0018",
     codigo_usuario: "USR-BIB-002",
     fechas: {
       fecha_salida: new Date("2026-05-11T00:00:00Z"),
@@ -217,7 +219,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5016",
-    codigo_libro: "LIB-00019",
+    codigo_libro: "LIB0019",
     codigo_usuario: "USR-BIB-001",
     fechas: {
       fecha_salida: new Date("2026-05-12T00:00:00Z"),
@@ -227,7 +229,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5017",
-    codigo_libro: "LIB-00020",
+    codigo_libro: "LIB0020",
     codigo_usuario: "USR-BIB-002",
     fechas: {
       fecha_salida: new Date("2026-05-13T00:00:00Z"),
@@ -238,7 +240,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5018",
-    codigo_libro: "LIB-00021",
+    codigo_libro: "LIB0021",
     codigo_usuario: "USR-BIB-003",
     fechas: {
       fecha_salida: new Date("2026-05-14T00:00:00Z"),
@@ -248,7 +250,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5019",
-    codigo_libro: "LIB-00022",
+    codigo_libro: "LIB0022",
     codigo_usuario: "USR-BIB-002",
     fechas: {
       fecha_salida: new Date("2026-05-15T00:00:00Z"),
@@ -258,7 +260,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5020",
-    codigo_libro: "LIB-00023",
+    codigo_libro: "LIB0023",
     codigo_usuario: "USR-BIB-002",
     fechas: {
       fecha_salida: new Date("2026-05-16T00:00:00Z"),
@@ -269,7 +271,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5021",
-    codigo_libro: "LIB-00024",
+    codigo_libro: "LIB0024",
     codigo_usuario: "USR-BIB-001",
     fechas: {
       fecha_salida: new Date("2026-05-17T00:00:00Z"),
@@ -279,7 +281,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5022",
-    codigo_libro: "LIB-00025",
+    codigo_libro: "LIB0025",
     codigo_usuario: "USR-BIB-002",
     fechas: {
       fecha_salida: new Date("2026-05-18T00:00:00Z"),
@@ -289,7 +291,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5023",
-    codigo_libro: "LIB-00026",
+    codigo_libro: "LIB0026",
     codigo_usuario: "USR-BIB-003",
     fechas: {
       fecha_salida: new Date("2026-05-19T00:00:00Z"),
@@ -300,7 +302,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5024",
-    codigo_libro: "LIB-00027",
+    codigo_libro: "LIB0027",
     codigo_usuario: "USR-BIB-002",
     fechas: {
       fecha_salida: new Date("2026-05-20T00:00:00Z"),
@@ -310,7 +312,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5025",
-    codigo_libro: "LIB-00028",
+    codigo_libro: "LIB0028",
     codigo_usuario: "USR-BIB-001",
     fechas: {
       fecha_salida: new Date("2026-05-21T00:00:00Z"),
@@ -320,7 +322,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5026",
-    codigo_libro: "LIB-00029",
+    codigo_libro: "LIB0029",
     codigo_usuario: "USR-BIB-002",
     fechas: {
       fecha_salida: new Date("2026-05-22T00:00:00Z"),
@@ -331,7 +333,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5027",
-    codigo_libro: "LIB-00030",
+    codigo_libro: "LIB0030",
     codigo_usuario: "USR-BIB-002",
     fechas: {
       fecha_salida: new Date("2026-05-23T00:00:00Z"),
@@ -341,7 +343,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5028",
-    codigo_libro: "LIB-00031",
+    codigo_libro: "LIB0031",
     codigo_usuario: "USR-BIB-003",
     fechas: {
       fecha_salida: new Date("2026-05-24T00:00:00Z"),
@@ -351,7 +353,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5029",
-    codigo_libro: "LIB-00032",
+    codigo_libro: "LIB0032",
     codigo_usuario: "USR-BIB-002",
     fechas: {
       fecha_salida: new Date("2026-05-25T00:00:00Z"),
@@ -362,7 +364,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5030",
-    codigo_libro: "LIB-00033",
+    codigo_libro: "LIB0033",
     codigo_usuario: "USR-BIB-002",
     fechas: {
       fecha_salida: new Date("2026-05-26T00:00:00Z"),
@@ -372,7 +374,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5031",
-    codigo_libro: "LIB-00034",
+    codigo_libro: "LIB0034",
     codigo_usuario: "USR-BIB-001",
     fechas: {
       fecha_salida: new Date("2026-05-27T00:00:00Z"),
@@ -382,7 +384,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5032",
-    codigo_libro: "LIB-00035",
+    codigo_libro: "LIB0035",
     codigo_usuario: "USR-BIB-002",
     fechas: {
       fecha_salida: new Date("2026-05-28T00:00:00Z"),
@@ -393,7 +395,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5033",
-    codigo_libro: "LIB-00036",
+    codigo_libro: "LIB0036",
     codigo_usuario: "USR-BIB-002",
     fechas: {
       fecha_salida: new Date("2026-05-29T00:00:00Z"),
@@ -403,7 +405,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5034",
-    codigo_libro: "LIB-00037",
+    codigo_libro: "LIB0037",
     codigo_usuario: "USR-BIB-003",
     fechas: {
       fecha_salida: new Date("2026-05-30T00:00:00Z"),
@@ -413,7 +415,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5035",
-    codigo_libro: "LIB-00038",
+    codigo_libro: "LIB0038",
     codigo_usuario: "USR-BIB-002",
     fechas: {
       fecha_salida: new Date("2026-05-31T00:00:00Z"),
@@ -424,7 +426,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5036",
-    codigo_libro: "LIB-00039",
+    codigo_libro: "LIB0039",
     codigo_usuario: "USR-BIB-002",
     fechas: {
       fecha_salida: new Date("2026-06-01T00:00:00Z"),
@@ -434,7 +436,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5037",
-    codigo_libro: "LIB-00040",
+    codigo_libro: "LIB0040",
     codigo_usuario: "USR-BIB-001",
     fechas: {
       fecha_salida: new Date("2026-06-02T00:00:00Z"),
@@ -444,7 +446,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5038",
-    codigo_libro: "LIB-00041",
+    codigo_libro: "LIB0041",
     codigo_usuario: "USR-BIB-002",
     fechas: {
       fecha_salida: new Date("2026-06-03T00:00:00Z"),
@@ -455,7 +457,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5039",
-    codigo_libro: "LIB-00042",
+    codigo_libro: "LIB0042",
     codigo_usuario: "USR-BIB-002",
     fechas: {
       fecha_salida: new Date("2026-06-04T00:00:00Z"),
@@ -465,7 +467,7 @@ db.prestamos.insertMany([
   },
   {
     codigo_prestamo: "PR-5040",
-    codigo_libro: "LIB-00043",
+    codigo_libro: "LIB0043",
     codigo_usuario: "USR-BIB-003",
     fechas: {
       fecha_salida: new Date("2026-06-05T00:00:00Z"),
